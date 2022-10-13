@@ -19,9 +19,9 @@
 <!-- //CSS -->
 
 <!-- SEO -->
-<meta name="author" content="enny" />
-<meta name="description" content="PHP 사이트 만들기 입니다." />
-<meta name="keyword" content="PHP, 로그인, 회원가입, 사이트, 으니" />
+<meta name="author" content="BODA" />
+<meta name="description" content="전시회 정보 사이트" />
+<meta name="keyword" content="PHP, 로그인, 회원가입, 사이트, 보다, BODA, 전시회, 전시, 검색, 정보, 전시정보, 전시회 정보, 전시회정보, 전시시간, 전시종류, 현재전시, 월별 전시, 미술전시, 디자인, 미술, 박람회, 미술관, 갤러리, 종로전시, 서울전시, 경기도 전시, 지방전시" />
 <meta name="robots" content="all" />
 <!-- //SEO -->
 

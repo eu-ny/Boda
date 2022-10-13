@@ -144,5 +144,4 @@
         </div>
     </div>
     <!-- //login popup -->
-    
 </header>
