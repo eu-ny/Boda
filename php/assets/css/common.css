@@ -1,0 +1,26 @@
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 180px auto 120px auto;
+}
+
+.top__container {
+    max-width: 1200px;
+    padding: 180px 20px 0 20px;
+    margin: 0 auto;
+}
+
+.mid__container {
+    max-width: 1200px;
+    padding: 0 20px 120px 20px;
+    margin: 0 auto;
+}
+
+/* 미디어쿼리 */
+@media (max-width:960px) {
+    .container,
+    .top__container,
+    .mid__container {
+        width: 90%;
+    }
+}
