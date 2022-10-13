@@ -1,9 +1,9 @@
 const open = () => {
-    document.querySelector(".modal").classList.remove("hidden");
+    document.querySelector(".alert").classList.remove("hidden");
 }
 
 const close = () => {
-    document.querySelector(".modal").classList.add("hidden");
+    document.querySelector(".alert").classList.add("hidden");
 }
 
 document.querySelector(".openBtn").addEventListener("click", open);

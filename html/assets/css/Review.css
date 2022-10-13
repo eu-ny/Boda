@@ -320,7 +320,6 @@ table {
     margin-right: 20px;
     font-weight: 200;
     font-size: 16px;
-    float: left;
 }
 
 /* search */
@@ -387,6 +386,9 @@ input::-webkit-search-results-decoration{
 
 /* 미디어쿼리 */
 @media (max-width: 600px) {
+    .board {
+        margin-bottom: 50px;
+    }
     .main__header .home {
         display: none;
     }
@@ -401,15 +403,12 @@ input::-webkit-search-results-decoration{
     }
     .riview__search {
         display: block;
-        max-width: 90%;
+        max-width: 95%;
     }
     .riview__search fieldset select {
         width: 90px;
         margin-right: 5px;
         margin-top: 30px;
-    }
-    .riview__search fieldset input {
-        width: 200px;
     }
     .riview__search fieldset button {
       margin-left: 3px;
