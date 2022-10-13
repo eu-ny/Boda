@@ -12,57 +12,59 @@
         <link rel="stylesheet" href="../assets/css/header.css" />
         <link rel="stylesheet" href="../assets/css/login.css">
         <link rel="stylesheet" href="../assets/css/loginPopup.css">
-        <link rel="stylesheet" href="../assets/css/mainHeader.css">
+        <link rel="stylesheet" href="../assets/css/Review.css">
         <link rel="stylesheet" href="../assets/css/ReviewView.css">
         <link rel="stylesheet" href="../assets/css/footer.css">
         <title>ALL REVIEW VIEW</title>
     </head>
     <body>
-        <header id="header">
-            <div class="header__container">
-                <div class="header__left">
-                    <div class="header__logo"><a href="#">BODA</a></div>
+        <header id="header" class="header__container">
+            <div class="header__area">
+                <div class="header__logo">
+                    <a href="#">BODA</a>
                 </div>
-                <div class="header__center height">
-                    <ul class="menu">
-                        <li><a href="#">EXHIBITION</a>
-                            <div class="subMemu">
-                                <ul class="sub" >
-                                    <li><a href="#">현재전시</a></li>
-                                    <li><a href="#">예정전시</a></li>
-                                    <li><a href="#">지난전시</a></li>
-                                    <li><a href="#">추천전시</a></li>
-                                </ul>
-                            </div>
+                <div class="header__menu">
+                    <ul>
+                        <li>
+                            <a class="main__menu" href="#">EXHIBITION</a>
+                            <ul class="sub blind">
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">지난전시</a></li>
+                                <li><a href="#">추천전시</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">SEARCH</a>
-                            <div class="subMemu">
-                                <ul class="sub" >
-                                    <li><a href="#">키워드별 검색</a></li>
-                                    <li><a href="#">직접 검색</a></li>
-                                </ul>
-                            </div>    
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="main__menu" href="#">SEARCH</a>
+                            <ul class="sub blind">
+                                <li><a href="#">키워드별 검색</a></li>
+                                <li><a href="#">직접 검색</a></li>
+                            </ul>
                         </li>
-                        <li><a href="../community/bestReview.html">COMMUNITY</a>
-                            <div class="subMemu">
-                                <ul class="sub" >
-                                    <li><a href="../community/bestReview.html">REVIEW</a></li>
-                                    <li><a href="../community/Talk.html">TALK</a></li>
-                                </ul>
-                            </div>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="main__menu" href="#">COMMUNITY</a>
+                            <ul class="sub blind">
+                                <li><a href="../community/bestReview.html">REVIEW</a></li>
+                                <li><a href="../community/Talk.html">TALK</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">ABOUT</a>
-                            <div class="subMemu">
-                                <ul class="sub" >
-                                    <li><a href="#">ABOUT BODA</a></li>
-                                    <li><a href="#">CONTACT US</a></li>
-                                </ul>
-                            </div>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a class="main__menu" href="#">ABOUT</a>
+                            <ul class="sub blind">
+                                <li><a href="#">ABOUT BODA</a></li>
+                                <li><a href="#">CONTACT US</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
                 <div class="header__right">
-                    <a href="#">
+                    <a class="search" href="#">
                         <svg
                             width="29"
                             height="29"
@@ -77,6 +79,7 @@
                         </svg>
                     </a>
                     <svg
+                        class="ham"
                         width="40"
                         height="32"
                         viewBox="0 0 40 32"
@@ -91,8 +94,26 @@
                             stroke-linejoin="round"
                         />
                     </svg>
+    
                     <svg
-                        class="blind"
+                        class="ham__close blind"
+                        width="25"
+                        height="28"
+                        viewBox="0 0 29 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 31L27.9483 1M27.9483 31L1 1"
+                            stroke="#323232"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+    
+                    <svg
+                        class="ham__mobile"
                         width="40"
                         height="32"
                         viewBox="0 0 40 32"
@@ -107,11 +128,64 @@
                             stroke-linejoin="round"
                         />
                     </svg>
+    
+                    <svg
+                        class="ham__mobile__close blind"
+                        width="25"
+                        height="28"
+                        viewBox="0 0 29 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 31L27.9483 1M27.9483 31L1 1"
+                            stroke="#323232"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+    
                     <div class="smallmenu blind">
                         <li><a href="#">LOGIN</a></li>
                         <li><a href="../login/agree.html">SIGN UP</a></li>
                         <li><a href="#">MYPAGE</a></li>
                         <li><a href="../notice/notice.html">NOTICE</a></li>
+                    </div>
+                    <div class="mobilemenu">
+                        <li>
+                            <a href="#">EXHIBITION</a>
+                            <ul>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">지난전시</a></li>
+                                <li><a href="#">추천전시</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SEARCH</a>
+                            <ul>
+                                <li><a href="#">키워드별 검색</a></li>
+                                <li><a href="#">직접 검색</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COMMUNITY</a>
+                            <ul>
+                                <li><a href="#">REVIEW</a></li>
+                                <li><a href="#">TALK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ABOUT</a>
+                            <ul>
+                                <li><a href="#">ABOUT BODA</a></li>
+                                <li><a href="#">CONTACT US</a></li></li>
+                            </ul>
+                        </li>
+                        <ul class="small">
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="../login/agree.html">SIGN UP</a></li>
+                            <li><a href="#">MYPAGE</a></li>
+                            <li><a href="../notice/notice.html">NOTICE</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -120,19 +194,36 @@
                 <div class="login__wrap">
                     <div class="login__header">
                         <h2 class="popup__title">LOGIN</h2>
-                        <button type="button" class="popup__close"><span class="blind">닫기</span></button>
-                    </div>  
+                        <button type="button" class="popup__close">
+                            <span class="blind">닫기</span>
+                        </button>
+                    </div>
                     <div class="login__inner">
-                        <form action="#" class="loginForm"  method="post">
+                        <form action="#" class="loginForm" method="post">
                             <fieldset>
                                 <legend class="blind">로그인 작성 란</legend>
                                 <div class="ID">
                                     <label for="userID" class="blind">아이디</label>
-                                    <input type="text" class="userID" name="userID" placeholder="아이디" id="userID" maxlength="20" required>
+                                    <input
+                                        type="text"
+                                        class="userID"
+                                        name="userID"
+                                        placeholder="아이디"
+                                        id="userID"
+                                        maxlength="20"
+                                        required
+                                    />
                                 </div>
                                 <div class="pass">
                                     <label for="userPass" class="blind">패스워드</label>
-                                    <input type="password" class="userPass" name="userPass" placeholder="비밀번호" id="userPass" required>
+                                    <input
+                                        type="password"
+                                        class="userPass"
+                                        name="userPass"
+                                        placeholder="비밀번호"
+                                        id="userPass"
+                                        required
+                                    />
                                 </div>
                             </fieldset>
                         </form>
@@ -149,6 +240,8 @@
             </div>
             <!-- //login popup -->
         </header>
+        <!-- //header -->
+
     
         <main id="main">
             <h2 class="blind">모든 리뷰 게시판 보기 페이지입니다.</h2>
