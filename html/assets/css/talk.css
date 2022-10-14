@@ -198,27 +198,9 @@ table {
 }
 
 /* blind */
-fieldset textarea:focus {
+fieldset #talkContents:focus {
     outline: none;
 }
-fieldset legend {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-}
-fieldset label {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    resize: none;
-}
-
 /* 미디어쿼리 */
 @media (max-width:960px) {
     .main__header h2:nth-child(2) {

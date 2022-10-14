@@ -162,6 +162,7 @@ input[id="check4"]:checked + label::after {
 .btn_box {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
     margin-bottom: 120px;
 }
 
@@ -173,6 +174,7 @@ input[id="check4"]:checked + label::after {
     background-color: #fff;
     border-radius: 10px;
     font-size: 20px;
+    box-sizing: border-box;
     border: 1px solid #323232;
     cursor: pointer;
     display: flex;
@@ -184,9 +186,6 @@ input[id="check4"]:checked + label::after {
     background-color: #323232;
     color: #fff;
 }
-
-
-
 
 /* infoType */
 .info__inner {
@@ -204,6 +203,22 @@ input[id="check4"]:checked + label::after {
     display: block;
     border-bottom: 1px solid #d0d0d0;
     padding-bottom: 50px;
+}
+
+.info1 .msg {
+    color: orangered;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.info2 .msg {
+    color: orangered;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.IDbox .msg {
+    display: block;
 }
 
 .inputbox {
@@ -236,25 +251,37 @@ input[id="check4"]:checked + label::after {
     width: 100%;
     box-sizing: border-box;
     height: 70px;
-    padding-left: 20px;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    font-weight: 300;
+    border-radius: 10px;
 }
 
-.IDbox {
-    display: flex;
-    justify-content: space-between;
+#infoType .IDbox {
+}
+
+#infoType .IDbox input {
+    width: 75%;
+}
+
+#infoType .IDbox a {
+    width: 22%;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    background-color: black;
+    float: right;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
 }
 
 #infoType input::placeholder {
-    font-size: 18px;
+    font-size: 16px;
     color: #d9d9d9;
-}
-
-#id {
-    border-radius: 10px;
-    border: 1px solid #d9d9d9;
-}
-.id {
-    width: 70%
 }
 
 #youPass {
@@ -274,16 +301,17 @@ input[id="check4"]:checked + label::after {
     padding: 20px;
     background-color: #323232;
     border-radius: 10px;
-    color: #d9d9d9;
+    color: white;
     font-size: 18px;
     cursor: pointer;
+    font-weight: 300;
     border: none;
 }
 
 .login2 {
     font-size: 24px;
     font-weight: 400;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -310,28 +338,10 @@ input[id="check4"]:checked + label::after {
     border-radius: 10px;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
-    margin-bottom: 50px;
-}
-
-.birth {
-    display: flex;
-    justify-content: space-between;
-}
-.birth div {
-    display: flex;
-    align-items: flex-end;
-    font-size: 18px;
-}
-.birth input {
-    width: 10%;
-    border-radius: 10px;
-    border: 1px solid #d9d9d9;
-    box-sizing: border-box;
-    margin-right: 5px;
 }
 
 /* modal */
-.modal {
+/* .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -341,21 +351,24 @@ input[id="check4"]:checked + label::after {
     justify-content: center;
     align-items: center;
 }
-
 .modal .bg {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 .modalBox {
     position: absolute;
     background-color: #fff;
     width: 720px;
     /* height: 430px; */
-    padding: 15px;
+    /* padding: 15px;
     text-align: center;
     border-radius: 10px;
+} */
+.modalBox {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 120px;
 }
 .modalBox .mobal-btn {
     width: 330px;
@@ -367,6 +380,8 @@ input[id="check4"]:checked + label::after {
     background-color: #000;
     padding: 5px 10px;
     cursor: pointer;
+    text-align: center;
+    color: #fff;
 }
 .modalBox .mobal-btn .closeBtn {
     color: #fff;
@@ -376,11 +391,13 @@ input[id="check4"]:checked + label::after {
 .modalBox h2 {
     font-size: 48px;
     margin-top: 80px;
+    text-align: center;
 }
 .modalBox p {
     font-size: 20px;
     color: #323232;
     margin: 60px 0;
+    text-align: center;
 }
 
 .hidden {
@@ -439,5 +456,4 @@ input[id="check4"]:checked + label::after {
     .btn_box .Btn {
         width: 140px;
     }
-
 }

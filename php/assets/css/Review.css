@@ -34,10 +34,12 @@
     font-size: 18px;
     padding: 3px 20px;
 }
-.main__header .menu li a.active {
+.main__header .menu li:nth-child(1) a.active,
+.main__header .menu li:nth-child(2) a.active {
     color: #323232;
     font-weight: 600;
 }
+
 .main__header .home {
     position: absolute;
     bottom: 100px;    
@@ -318,29 +320,28 @@ table {
     margin-right: 20px;
     font-weight: 200;
     font-size: 16px;
-    float: left;
 }
 
 /* search */
-.board__search {
+.riview__search {
     text-align: right;
     margin-bottom: 45px;
 }
-.board__search fieldset select {
+.riview__search fieldset select {
     width: 100px;
     height: 45px;
     margin-right: 20px;
     font-weight: 400;
     font-size: 16px;
 }
-.board__search fieldset select option {
+.riview__search fieldset select option {
     font-size: 16px;
     font-weight: 400;
 }
-.board__search fieldset select:focus{
+.riview__search fieldset select:focus{
     outline: none;
 }
-.board__search fieldset input {
+.riview__search fieldset input {
     width: 200px;
     height: 45px;
     border: none;
@@ -354,14 +355,14 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
     display:none;
 }
-.board__search fieldset input:focus {
+.riview__search fieldset input:focus {
     outline: none;
 }
-.board__search fieldset input::placeholder {
+.riview__search fieldset input::placeholder {
     font-weight: 300;
     font-size: 16px;
 }
-.board__search fieldset button {
+.riview__search fieldset button {
     background-color: white;
     margin-left: 10px;
     cursor:pointer;
@@ -385,6 +386,9 @@ input::-webkit-search-results-decoration{
 
 /* 미디어쿼리 */
 @media (max-width: 600px) {
+    .board {
+        margin-bottom: 50px;
+    }
     .main__header .home {
         display: none;
     }
@@ -397,19 +401,16 @@ input::-webkit-search-results-decoration{
     .review__table .board__btn a {
         display: block;
     }
-    .board__search {
+    .riview__search {
         display: block;
-        max-width: 90%;
+        max-width: 95%;
     }
-    .board__search fieldset select {
+    .riview__search fieldset select {
         width: 90px;
         margin-right: 5px;
         margin-top: 30px;
     }
-    .board__search fieldset input {
-        width: 200px;
-    }
-    .board__search fieldset button {
+    .riview__search fieldset button {
       margin-left: 3px;
     }
 }

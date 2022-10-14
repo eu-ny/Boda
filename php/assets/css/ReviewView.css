@@ -1,5 +1,5 @@
 /* Best board */
-.board {
+.viewBoard {
     margin-bottom: 95px;
 }
 table {
@@ -62,14 +62,14 @@ table {
     color: #888888;
 }
 .table__bottom .icon .eye {
-    margin-left: 80px;
+    margin-left: 30px;
 }
 .table__bottom .icon .heart {
     margin-left: 50px;
 }
 
 .table__bottom .btn {
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
 }
 
 .table__bottom .btn a {
@@ -195,3 +195,38 @@ table {
     overflow: hidden;
     resize: none;
 }
+
+/* 미디어 쿼리 */
+@media (max-width: 960px) {
+    .board {
+      margin-bottom: 68px;
+    }
+    .header__menu {
+      display: none;
+    }
+    .mid__container .height {
+      font-size: 18px;
+    }
+    .mid__container .height img {
+      width: 100%;
+      transition: all 0.6s ease-in-out;
+    }
+    .table__bottom {
+        display: block;
+    }
+    .table__bottom .icon .eye {
+        margin-left: 0;
+    }
+    .table__bottom .btn {
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-around;
+    }
+    .bestcomments {
+      transition: all 0.2s ease-in-out;
+    }
+    .bestcommentsList {
+      width: 79%;
+      transition: all 0.6s ease-in-out;
+    }
+  }

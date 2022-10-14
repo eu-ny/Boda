@@ -28,8 +28,8 @@
                 <li>
                     <a class="main__menu" href="#">COMMUNITY</a>
                     <ul class="sub blind">
-                        <li><a href="../community/bestReview.html">REVIEW</a></li>
-                        <li><a href="../community/Talk.html">TALK</a></li>
+                        <li><a href="../community/bestReview.php">REVIEW</a></li>
+                        <li><a href="../community/Talk.php">TALK</a></li>
                     </ul>
                 </li>
             </ul>
@@ -67,9 +67,9 @@
 
             <div class="smallmenu blind">
                 <li><a href="#">LOGIN</a></li>
-                <li><a href="../login/agree.html">SIGN UP</a></li>
+                <li><a href="../login/agree.php">SIGN UP</a></li>
                 <li><a href="#">MYPAGE</a></li>
-                <li><a href="../notice/notice.html">NOTICE</a></li>
+                <li><a href="../notice/notice.php">NOTICE</a></li>
             </div>
             <div class="mobilemenu">
                 <li>
@@ -101,9 +101,9 @@
                 </li>
                 <ul class="small">
                     <li><a href="#">LOGIN</a></li>
-                    <li><a href="../login/agree.html">SIGN UP</a></li>
+                    <li><a href="../login/agree.php">SIGN UP</a></li>
                     <li><a href="#">MYPAGE</a></li>
-                    <li><a href="../notice/notice.html">NOTICE</a></li>
+                    <li><a href="../notice/notice.php">NOTICE</a></li>
                 </ul>
             </div>
         </div>
@@ -114,30 +114,28 @@
         <div class="login__wrap">
             <div class="login__header">
                 <h2 class="popup__title">LOGIN</h2>
-                <button type="button" class="popup__close">
-                    <span class="blind">닫기</span>
-                </button>
+                <button type="button" class="popup__close"><span class="blind">닫기</span></button>
             </div>
             <div class="login__inner">
-                <form action="#" class="loginForm" method="post">
+                <form action="loginSave.php" name="login" class="loginForm" method="post">
                     <fieldset>
                         <legend class="blind">로그인 작성 란</legend>
                         <div class="ID">
-                            <label for="userID" class="blind">아이디</label>
-                            <input type="text" class="userID" name="userID" placeholder="아이디" id="userID" maxlength="20" required />
+                            <label for="youID" class="blind">아이디</label>
+                            <input type="text" class="userID" name="youID" placeholder="아이디" id="youID" maxlength="20" required>
                         </div>
                         <div class="pass">
-                            <label for="userPass" class="blind">패스워드</label>
-                            <input type="password"class="userPass"name="userPass"placeholder="비밀번호"id="userPass" required />
+                            <label for="youPass" class="blind">패스워드</label>
+                            <input type="password" class="userPass" name="youPass" placeholder="비밀번호" id="youPass" required>
                         </div>
+                        <button type="submit" class="login-btn">로그인</button>
                     </fieldset>
                 </form>
-                <button type="submit" class="login-btn">로그인</button>
                 <div class="login__footer">
                     <div class="join__btn">
-                        <a href="../login/agree.html">회원가입</a>
-                        <a href="../login/findID.html">아이디 찾기</a>
-                        <a href="../login/findPass.html">비밀번호 찾기</a>
+                        <a href="../login/agree.php">회원가입</a>
+                        <a href="../login/findID.php">아이디 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
                     </div>
                 </div>
             </div>

@@ -62,14 +62,14 @@ table {
     color: #888888;
 }
 .table__bottom .icon .eye {
-    margin-left: 80px;
+    margin-left: 30px;
 }
 .table__bottom .icon .heart {
     margin-left: 50px;
 }
 
 .table__bottom .btn {
-    margin-right: 30px;
+    margin: 0 30px 30px 0;
 }
 
 .table__bottom .btn a {
@@ -198,9 +198,6 @@ table {
 
 /* 미디어 쿼리 */
 @media (max-width: 960px) {
-    .login__wrap {
-      width: 90%;
-    }
     .board {
       margin-bottom: 68px;
     }
@@ -226,7 +223,6 @@ table {
         justify-content: space-around;
     }
     .bestcomments {
-      width: 68%;
       transition: all 0.2s ease-in-out;
     }
     .bestcommentsList {
