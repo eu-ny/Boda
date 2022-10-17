@@ -86,15 +86,17 @@
 }
 .header__right .ham {
     position: absolute;
-    right: 60px;
-    top: 25px;
+    right: 30px;
+    top: -3px;
     cursor: pointer;
+    padding: 27px;
 }
 .header__right .ham__close {
     position: absolute;
-    right: 68px;
-    top: 28px;
+    right: 36px;
+    top: 1px;
     cursor: pointer;
+    padding: 27px;
 }
 
 .header__right .ham__mobile {
@@ -143,19 +145,37 @@
 }
 
 /* 미디어쿼리 */
-@media (max-width: 1040px) {
+@media (max-width: 1000px) {
     .header__menu .main__menu {
-        width: 120px;
+        width: 160px;
     }
     .header__menu .sub li a {
-        width: 120px;
-        height: 50px;
-        line-height: 40px;
-        display: block;
-        color: #888888;
+        width: 160px;
     }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 900px) {
+    .header__menu .main__menu {
+        width: 130px;
+    }
+    .header__menu .sub li a {
+        width: 130px;
+    }
+    .header__area {
+        padding: 0 30px;
+    }
+    .header__right .ham {
+        right: 0px;
+    }
+    .header__right .ham__close {
+        right: 38px;
+    }
+    .header__right .search {
+        right: 100px;
+    }
+}
+
+@media (max-width: 820px) {
     .header__area {
         padding: 0 20px;
     }
@@ -203,12 +223,11 @@
         width: 100%;
         box-sizing: border-box;
         background-color: #fff;
-        padding: 20px 60px;
+        padding: 20px 60px 100px;
         font-size: 20px;
         font-weight: 300;
         text-align: right;
         z-index: 10;
-        height: 100% - 80px;
         transition: right 0.4s ease-in;
     }
 

@@ -149,31 +149,31 @@ table tbody tr td.content .box {
     overflow:hidden;
 }
 
-/* board__search */
-.notice__header {
+/* notice__search */
+.notice__search {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.notice__search fieldset {
     position: relative;
+    margin-right: 20px;
 }
-.board__search {
-    float: right;
-    position: absolute;
-    bottom: -10px;
-    right: 40px;
-}
-.board__search fieldset select {
+.notice__search fieldset select {
     width: 100px;
     height: 45px;
     margin-right: 20px;
     font-weight: 400;
     font-size: 16px;
 }
-.board__search fieldset select option {
+.notice__search fieldset select option {
     font-size: 16px;
     font-weight: 400;
 }
-.board__search fieldset select:focus{
+.notice__search fieldset select:focus{
     outline: none;
 }
-.board__search fieldset input {
+.notice__search fieldset input {
     width: 200px;
     height: 45px;
     border: none;
@@ -187,18 +187,21 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
     display:none;
 }
-.board__search fieldset input:focus {
+.notice__search fieldset input:focus {
     outline: none;
 }
-.board__search fieldset input::placeholder {
+.notice__search fieldset input::placeholder {
     font-family: "scoredream";
     font-weight: 300;
     font-size: 16px;
 }
-.board__search fieldset button {
+.notice__search fieldset button {
     background-color: white;
     margin-left: 10px;
     cursor:pointer;
+    position: absolute;
+    right: 0px;
+    bottom: 13px;
 }
 .board__pages ul {
     display: flex;
@@ -220,14 +223,13 @@ input::-webkit-search-results-decoration{
 
 /* 미디어쿼리 */
 @media (max-width: 1000px) {
-    .board__search {
+    .notice__search {
         position: static;
         margin-bottom: 40px;
-        width: 72%;
     }
-    .board__search fieldset input {
+    /* .notice__search fieldset input {
         width: 150px;
-    }
+    } */
     table tbody tr td.content {
         padding: 40px 60px;
     }
@@ -240,10 +242,9 @@ input::-webkit-search-results-decoration{
     .board__table2 {
         display: block;
     }
-    .board__search {
-        position: static;
-        margin-bottom: 40px;
-        width: 82%;
+    .notice__search {
+        width: 100%;
+        justify-content: center;
     }
     .notice__header .home {
         display: none;
@@ -260,16 +261,10 @@ input::-webkit-search-results-decoration{
     colgroup col:nth-child(3){
         display: none;
     }
-    
-
 }
 
 @media (max-width: 480px) {
-    .board__search {
-        width: inherit;
-    }
-    .board__search fieldset select {
-        margin-right: 5px;
+    .notice__search fieldset select {
         width: 90px;
     }
 }
