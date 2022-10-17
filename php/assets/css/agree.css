@@ -372,28 +372,6 @@ input[id="check4"]:checked + label::after {
         width: 50%;
     }
 
-    /* .modalBox {
-        width: 80%;
-        box-sizing: border-box;
-    }
-    .modalBox h2 {
-        margin-top: 50px;
-        font-size: 40px;
-    }
-    .modalBox p {
-        font-size: 16px;
-    }
-    .modalBox .mobal-btn {
-        width: 60%;
-        height: 60px;
-        font-size: 18px;
-        margin-bottom: 50px;
-    }
-    .modalBox .mobal-btn .closeBtn {
-        padding: 20px;
-    } */
-
-
 }
 @media (max-width:600px) {
     .IDbox {
@@ -425,5 +403,14 @@ input[id="check4"]:checked + label::after {
     .modalBox p {
         font-size: 18px;
         /* margin: 60px 0 40px; */
+    }
+}
+
+@media (max-width: 480px){
+    .agree {
+        padding: 0px;
+    }
+    .info__inner {
+        width: 100%;
     }
 }
