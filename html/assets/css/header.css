@@ -82,19 +82,19 @@
 .header__right .search {
     position: absolute;
     right: 130px;
-    top: 27px;
+    top: 25px;
 }
 .header__right .ham {
     position: absolute;
-    right: 30px;
+    right: 35px;
     top: -3px;
     cursor: pointer;
     padding: 27px;
 }
 .header__right .ham__close {
     position: absolute;
-    right: 36px;
-    top: 1px;
+    right: 42px;
+    top: 2px;
     cursor: pointer;
     padding: 27px;
 }

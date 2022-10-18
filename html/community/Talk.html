@@ -17,6 +17,14 @@
         <title>EXHIBITION TALK</title>
     </head>
     <body>
+        <!-- skip -->
+        <div id="skip">
+            <a href="#header">헤더 영역 바로가기</a>
+            <a href="#main">콘텐츠 영역 바로가기</a>
+            <a href="#footer">푸터 영역 바로가기</a>
+        </div>
+        <!-- //skip -->
+
         <!-- header -->
         <header id="header" class="header__container">
             <div class="header__area">
@@ -179,23 +187,21 @@
                         </a></span>
                     <span>EXHIBITION TALK</span>
                 </div>
+                <div class="menu">
+                    <li><a href="Review.html">REVIEW</a></li>
+                    <li><a class="active" href="Talk.html">TALK</a></li>
+                </div>
             </div>
             <section class="mid__container">
                 <div class="talk__write">
                     <form action="talkWriteSave.php" name="talkWrite" method="post">
                         <fieldset>
                             <legend class="blind">전시 토크 게시판 작성 영역</legend>
-                            <button type="submit" class="btn">글쓰기</button>
                             <div>
                                 <label for="talkContents" class="blind">내용</label>
-                                <textarea
-                                    name="talkContents"
-                                    id="talkContents"
-                                    rows="7"
-                                    placeholder="내용을 입력해 주세요."
-                                ></textarea>
+                                <textarea name="talkContents" id="talkContents" rows="7" placeholder="내용을 입력해 주세요."></textarea>
                             </div>
-                            
+                            <button type="submit" class="btn">글쓰기</button>
                         </fieldset>
                     </form>
                 </div>

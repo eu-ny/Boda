@@ -296,17 +296,20 @@ table {
 .review__table.subTable {
     display: none;
 }
-.review__table table thead tr th {
+.review__table.subTable table thead tr th {
     font-size: 16px;
 }
 .review__table.subTable tr td {
     font-size: 15px;
 }
-.review__table table tbody tr td:nth-child(2) {
+.review__table.subTable table tbody tr td:nth-child(2) {
     padding-left: 10px;
 }
-.review__table table tbody tr td:nth-child(4) {
+.review__table.subTable table tbody tr td:nth-child(4) {
     font-size: 14px;
+}
+.review__table.subTable .board__btn {
+    display: none;
 }
 
 /* search */
@@ -315,7 +318,11 @@ table {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 100px;
-}   
+} 
+.riview__subSerch {
+    display: none;
+}
+
 /* write btn */
 .riview__search .board__btn {
     margin-left: 20px;
@@ -434,6 +441,9 @@ input::-webkit-search-results-decoration{
 @media (max-width: 480px) {
     .riview__search {
         display: none;
+    }
+    .riview__subSerch {
+        display: block;
     }
     .review__board {
         margin-bottom: 30px;

@@ -114,10 +114,14 @@
     font-size: 16px;
 }
 
+#loginPage {
+    display: none;
+}
+
 
 /* 미디어쿼리 */
 @media (max-width:480px){
-    .login__wrap {
+    /* .login__wrap {
         width: 90%;
         padding: 75px 20px 50px;
     }
@@ -127,6 +131,17 @@
     }
     .popup__close {
         left: 40%;
+    } */
+    #loginPage {
+        display: block;
+    }
+    #loginPage .login__container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    #loginPopup {
+        display: none;
     }
 }
 
