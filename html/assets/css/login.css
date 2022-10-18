@@ -54,7 +54,7 @@
 
 }
 .find__tebMenu label {
-    margin: 50px 0;
+    margin: 60px 0 40px;
     margin-right: 40px;
     font-size: 16px;
 }
@@ -69,8 +69,8 @@
     cursor: pointer;
 }
 
-.find__tabContent .find-tab1 {
-    margin-bottom: 30px;
+.find__tabContent .find-tab.hide {
+    display: none;
 }
 
 .youName, .youID, .youEmail, .youPhone  {
@@ -144,6 +144,9 @@
 @media (max-width:480px) {
     .find__tebMenu label {
         margin: 10px 0;
+    }
+    .find__contents .find-ID {
+        margin-bottom: 30px;
     }
 }
 
