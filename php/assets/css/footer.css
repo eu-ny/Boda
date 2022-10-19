@@ -36,6 +36,9 @@
     width: 70%;
     word-break: keep-all;
 }
+/* .footer__top .footer__center li {
+    text-align: center;
+} */
 .footer__top .footer__center li a {
     color: #d0d0d0;
     line-height: 18px;
@@ -86,8 +89,12 @@
     .footer__top .footer__center span {
         display: none;
     }
+    /* .footer__top .footer__left {
+        margin-left: 30px;
+    } */
     .footer__top .footer__right {
         margin-left: 60px;
+        /* margin-right: 30px; */
     }
 
     .footer__top .footer__right svg {

@@ -13,7 +13,7 @@
     line-height: 1.3;
     font-weight: 500;
     font-size: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 110px;
     color: #323232;
 }
 .main__header .menu {
@@ -25,20 +25,46 @@
     font-weight: 200;
     padding: 3px 20px;
     font-size: 18px;
-    color: #b0b0b0;
+    width: 150px;
+    height: 23px;
+    text-align: center;
+    display: inline-block;
+    color: #B0B0B0;
     border-right: 1px solid #D0D0D0;
 }
 .main__header .menu li:nth-child(2) a {
-    color: #b0b0b0;
     font-weight: 200;
     font-size: 18px;
     padding: 3px 20px;
+    color: #B0B0B0;
+    text-align: center;
+    width: 140px;
+    display: inline-block;
 }
 .main__header .menu li:nth-child(1) a.active,
 .main__header .menu li:nth-child(2) a.active {
     color: #323232;
     font-weight: 600;
 }
+
+/* .main__header .menu li:nth-child(1) a {
+    font-weight: 200;
+    width: 150px;
+    height: 26px;
+    display: inline-block;
+    font-size: 18px;
+    color: #B0B0B0;
+    border-right: 1px solid #D0D0D0;
+}
+.main__header .menu li:nth-child(2) a {
+    color: #B0B0B0;
+    font-weight: 200;
+    text-align: right;
+    width: 140px;
+    height: 26px;
+    display: inline-block;
+    font-size: 18px;
+} */
 
 .main__header .home {
     position: absolute;
@@ -56,24 +82,6 @@
     border-left: 1px solid #D0D0D0;
 }
 
-.main__header .menu li:nth-child(1) a {
-    font-weight: 200;
-    width: 150px;
-    height: 26px;
-    display: inline-block;
-    font-size: 18px;
-    color: #B0B0B0;
-    border-right: 1px solid #D0D0D0;
-}
-.main__header .menu li:nth-child(2) a {
-    color: #B0B0B0;
-    font-weight: 200;
-    text-align: right;
-    width: 140px;
-    height: 26px;
-    display: inline-block;
-    font-size: 18px;
-}
 
 
 /* cardType */
@@ -92,7 +100,7 @@
 }
 .card {
     margin: 40px 0;
-    width: 30%;
+    width: 32%;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
@@ -165,8 +173,11 @@
 }
 
 @media(max-width: 1200px){
+    .card__container {
+        justify-content: space-evenly;
+    }
     .card {
-        width: 33%;
+        width: 30%;
     }
 }
 
@@ -240,6 +251,9 @@
     }
     .cardType.mobile {
         display: block;
+    }
+    .main__header h2:nth-child(2) {
+        margin-bottom: 80px;
     }
 }
 
@@ -415,6 +429,9 @@ input::-webkit-search-results-decoration{
     .main__header .home {
         display: none;
     }
+    .main__header .menu li:nth-child(1) a {
+        max-width: 160px;
+    }
     .review__table {
         display: none;
     }
@@ -439,11 +456,16 @@ input::-webkit-search-results-decoration{
 
 }
 @media (max-width: 480px) {
+    .main__header .menu li:nth-child(1) a {
+        max-width: 120px;
+    }
     .riview__search {
         display: none;
     }
     .riview__subSerch {
-        display: block;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
     }
     .review__board {
         margin-bottom: 30px;
@@ -466,13 +488,12 @@ input::-webkit-search-results-decoration{
     }
     .riview__subSerch fieldset {
         position: relative;
-        width: initial;
-        margin-right: 20px;
+        width: fit-content;
     }
     .riview__subSerch fieldset select {
-        width: 100px;
+        width: 90px;
         height: 45px;
-        margin-right: 20px;
+        margin-right: 10px;
         font-weight: 400;
         font-size: 16px;
     }
@@ -510,7 +531,7 @@ input::-webkit-search-results-decoration{
         margin-left: 10px;
         cursor:pointer;
         position: absolute;
-        right: 0px;
+        right: 5px;
         bottom: 13px;
     }
     .review__table.subTable .board__btn {

@@ -17,7 +17,7 @@
 }
 .main__header .home {
     position: absolute;
-    bottom: 0;    
+    bottom: 100px;    
     right: 20px;
 }
 .main__header .home span:nth-child(1) {
@@ -30,6 +30,55 @@
     padding-left: 25px;
     border-left: 1px solid #D0D0D0;
 }
+.main__header .menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.main__header .menu li:nth-child(1) a {
+    font-weight: 200;
+    padding: 3px 20px;
+    font-size: 18px;
+    width: 150px;
+    height: 23px;
+    text-align: center;
+    display: inline-block;
+    color: #B0B0B0;
+    border-right: 1px solid #D0D0D0;
+}
+.main__header .menu li:nth-child(2) a {
+    font-weight: 200;
+    font-size: 18px;
+    padding: 3px 20px;
+    color: #B0B0B0;
+    text-align: center;
+    width: 140px;
+    display: inline-block;
+}
+.main__header .menu li:nth-child(1) a.active,
+.main__header .menu li:nth-child(2) a.active {
+    color: #323232;
+    font-weight: 600;
+}
+
+/* .main__header .menu li:nth-child(1) a {
+    font-weight: 200;
+    width: 150px;
+    height: 26px;
+    display: inline-block;
+    font-size: 18px;
+    color: #B0B0B0;
+    border-right: 1px solid #D0D0D0;
+} */
+/* .main__header .menu li:nth-child(2) a {
+    color: #B0B0B0;
+    font-weight: 200;
+    text-align: right;
+    width: 140px;
+    height: 26px;
+    display: inline-block;
+    font-size: 18px;
+} */
 
 
 /* talk__write */
@@ -44,7 +93,7 @@
     padding: 20px;
     border: none;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 .talk__write fieldset .btn {
     width: 107px;
@@ -60,7 +109,7 @@
     font-weight: 200;
     font-family: 'scoredream';
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     cursor: pointer;
 }
 
@@ -73,10 +122,11 @@ table {
     font-weight: 400;
     font-style: normal;
     margin-bottom: 80px;
-    border-top: 2px solid #323232;
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #323232;
 }
 .comment {
-    border-bottom: 1px dashed #D0D0D0;
+    /* border-bottom: 1px dashed #D0D0D0; */
     box-sizing: border-box;
     padding: 45px 30px;
 }
@@ -163,9 +213,6 @@ table {
     font-size: 12px;
     text-align: center;
 }
-.board__table table tbody tr:nth-child(10){
-    border-bottom: 2px solid #323232;
-}
 .board__table table tbody tr:hover {
     background-color: #f5f5f5;
 }
@@ -202,7 +249,7 @@ fieldset #talkContents:focus {
     outline: none;
 }
 /* 미디어쿼리 */
-@media (max-width:960px) {
+@media (max-width:800px) {
     .main__header h2:nth-child(2) {
         margin-bottom: 80px;
     }
@@ -216,5 +263,11 @@ fieldset #talkContents:focus {
     }
     .comment .contents .contents__top {
         margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 600px){
+    .main__header .menu li:nth-child(1) a {
+        max-width: 120px;
     }
 }
