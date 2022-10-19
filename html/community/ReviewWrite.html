@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- CSS -->
         <link rel="stylesheet" href="../assets/css/fonts.css" />
         <link rel="stylesheet" href="../assets/css/reset.css" />
         <link rel="stylesheet" href="../assets/css/common.css" />
@@ -12,10 +13,20 @@
         <link rel="stylesheet" href="../assets/css/header.css" />
         <link rel="stylesheet" href="../assets/css/login.css">
         <link rel="stylesheet" href="../assets/css/loginPopup.css">
+        <link rel="stylesheet" href="../assets/css//agree.css">
+
+        <link rel="stylesheet" href="../assets/css/notice.css">
         <link rel="stylesheet" href="../assets/css/Review.css">
+        <link rel="stylesheet" href="../assets/css/ReviewView.css">
         <link rel="stylesheet" href="../assets/css/ReviewWrite.css">
+        <link rel="stylesheet" href="../assets/css/talk.css">
+
         <link rel="stylesheet" href="../assets/css/footer.css">
-        <title>ALL REVIEW VIEW</title>
+
+        <link rel="stylesheet" href="../assets/css/swiper.css">
+        <!-- //CSS -->
+
+        <title>REVIEW VIEW</title>
     </head>
     <body>
         <!-- skip -->
@@ -57,7 +68,7 @@
                         <li>
                             <a class="main__menu" href="#">COMMUNITY</a>
                             <ul class="sub blind">
-                                <li><a href="../community/bestReview.html">REVIEW</a></li>
+                                <li><a href="../community/Review.html">REVIEW</a></li>
                                 <li><a href="../community/Talk.html">TALK</a></li>
                             </ul>
                         </li>
@@ -74,23 +85,23 @@
                 </div>
                 <div class="header__right">
                     <a class="search" href="#">
-                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="22" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.7261 18.239H19.4162L18.952 17.7913C20.5769 15.9011 21.5552 13.4471 21.5552 10.7776C21.5552 4.82504 16.7301 0 10.7776 0C4.82504 0 0 4.82504 0 10.7776C0 16.7301 4.82504 21.5552 10.7776 21.5552C13.4471 21.5552 15.9011 20.5769 17.7913 18.952L18.239 19.4162V20.7261L25.391 27.8638C25.7937 28.2658 25.9951 28.4667 26.2279 28.5402C26.424 28.602 26.6345 28.6019 26.8306 28.5399C27.0633 28.4662 27.2644 28.265 27.6667 27.8627L27.8627 27.6667C28.265 27.2644 28.4662 27.0633 28.5399 26.8306C28.6019 26.6345 28.602 26.424 28.5402 26.2279C28.4667 25.9951 28.2658 25.7937 27.8638 25.391L20.7261 18.239ZM10.7776 18.239C6.64894 18.239 3.31618 14.9062 3.31618 10.7776C3.31618 6.64894 6.64894 3.31618 10.7776 3.31618C14.9062 3.31618 18.239 6.64894 18.239 10.7776C18.239 14.9062 14.9062 18.239 10.7776 18.239Z" fill="#323232" />                    
                         </svg>
                     </a>
-                    <svg class="ham" width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d ="M6.25 5.94922H33.75M6.25 15.8979H33.7 5M6.25 25.8467H33.75"stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="ham" width="35" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d ="M6.25 5.94922H33.75M6.25 15.8979H33.7 8M6.25 25.8467H33.75"stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
         
-                    <svg class="ham__close blind" width="25" height="28" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="ham__close blind" width="20" height="23" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 31L27.9483 1M27.9483 31L1 1" stroke="#323232" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
         
-                    <svg class="ham__mobile" width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d ="M6.25 5.94922H33.75M6.25 15.8979H33.7 5M6.25 25.8467H33.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg class="ham__mobile" width="35" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d ="M6.25 5.94922H33.75M6.25 15.8979H33.7 8M6.25 25.8467H33.75"stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
         
-                    <svg class="ham__mobile__close blind" width="25" height="28" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="ham__mobile__close blind" width="20" height="23" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 31L27.9483 1M27.9483 31L1 1" stroke="#323232" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
         
@@ -118,7 +129,7 @@
                         </li>
                         <li><a href="#">COMMUNITY</a>
                             <ul>
-                                <li><a href="../community/bestReview.html">REVIEW</a></li>
+                                <li><a href="../community/Review.html">REVIEW</a></li>
                                 <li><a href="../community/Talk.html">TALK</a></li>
                             </ul>
                         </li>
@@ -164,7 +175,7 @@
                             <div class="join__btn">
                                 <a href="../login/agree.html">회원가입</a>
                                 <a href="../login/findID.html">아이디 찾기</a>
-                                <a href="#">비밀번호 찾기</a>
+                                <a href="../login/findPass.html">비밀번호 찾기</a>
                             </div>
                         </div>
                     </div>
@@ -176,7 +187,7 @@
 
         <main id="main">
             <h2 class="blind">베스트 리뷰 게시판 수정 페이지입니다.</h2>
-            <div class="main__header top__container">
+            <div class="main__header top__container reviewWrite__header">
                 <h2>TODAY's</h2>
                 <h2>Review</h2>
                 <div class="home">
@@ -184,16 +195,16 @@
                             <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 17V11H12V17H17V9H20L10 0L0 9H3V17H8Z" fill="#323232" />
                             </svg>
-                        </a></span><span>BEST REVIEW</span>
+                        </a></span><span>REVIEW</span>
                 </div>
                 <div class="menu">
-                    <li><a href="bestReview.html" class="active">BEST REVIEW</a></li>
-                    <li><a href="allReview.html">ALL REVIEW</a></li>
+                    <li><a href="Review.html" class="active">REVIEW</a></li>
+                    <li><a href="Talk.html">TALK</a></li>
                 </div>
             </div>
     
             <section class="mid__container">
-                <div class="mid__ikon">
+                <div class="mid__icon">
                     <div class="Photo">
                         <svg width="20" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -283,9 +294,9 @@
     
                     </div>
                 </div>
-                <div class="board">
-                    <div class="board__table">
-                        <table>
+                <div class="review__write">
+                    <div class="R-write__board">
+                        <table class="R-write__table">
                             <colgroup>
                                 <col style="width: 30%" />
                                 <col style="width: 60%" />
@@ -299,13 +310,12 @@
                             </div>
                         </table>
                     </div>
-                    <div class="table__bottom">
+                    <div class="R-write__table__bottom">
                         <div class="btn">
-                            <a href="bestReview.html">목록</a>
-                            <a href="#">저장</a>
+                            <a href="Review.html">목록</a>
+                            <button type="submit" value="저장">저장</button>
                         </div>
                     </div>
-                </div>
                 </div>
     
             </section>

@@ -328,21 +328,21 @@
 }
 
 /* search */
-.riview__search {
+.reiview__search {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 100px;
 } 
-.riview__subSerch {
+.reiview__subSearch {
     display: none;
 }
 
 /* write btn */
-.riview__search .board__btn {
+.reiview__search .board__btn {
     margin-left: 20px;
 }
-.riview__search .board__btn a {
+.reiview__search .board__btn a {
     width: 107px;
     height: 50px;
     color: white;
@@ -354,25 +354,25 @@
     font-weight: 200;
     font-size: 16px;
 }
-.riview__search fieldset {
+.reiview__search fieldset {
     position: relative;
     margin-right: 20px;
 }
-.riview__search fieldset select {
+.reiview__search fieldset select {
     width: 100px;
     height: 45px;
     margin-right: 20px;
     font-weight: 400;
     font-size: 16px;
 }
-.riview__search fieldset select option {
+.reiview__search fieldset select option {
     font-size: 16px;
     font-weight: 400;
 }
-.riview__search fieldset select:focus{
+.reiview__search fieldset select:focus{
     outline: none;
 }
-.riview__search fieldset input {
+.reiview__search fieldset input {
     width: 200px;
     height: 45px;
     border: none;
@@ -387,14 +387,14 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
     display:none;
 }
-.riview__search fieldset input:focus {
+.reiview__search fieldset input:focus {
     outline: none;
 }
-.riview__search fieldset input::placeholder {
+.reiview__search fieldset input::placeholder {
     font-weight: 300;
     font-size: 16px;
 }
-.riview__search fieldset button {
+.reiview__search fieldset button {
     background-color: white;
     margin-left: 10px;
     cursor:pointer;
@@ -442,14 +442,14 @@ input::-webkit-search-results-decoration{
     .review__board .board__btn a {
         display: block;
     }
-    .riview__search .board__btn {
+    .reiview__search .board__btn {
         text-align: left;
         margin-left: 0;
     }
-    .riview__search fieldset {
+    .reiview__search fieldset {
         margin-right: 0;
     }
-    .riview__search fieldset select {
+    .reiview__search fieldset select {
         width: 90px;
         margin-right: 10px;
         margin-top: 30px;
@@ -460,10 +460,10 @@ input::-webkit-search-results-decoration{
     .main__header .menu li:nth-child(1) a {
         max-width: 120px;
     }
-    .riview__search {
+    .reiview__search {
         display: none;
     }
-    .riview__subSerch {
+    .reiview__subSearch {
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
@@ -472,10 +472,10 @@ input::-webkit-search-results-decoration{
         margin-bottom: 30px;
     }
     /* write btn */
-    .riview__subSerch .board__btn {
+    .reiview__subSearch .board__btn {
         margin-left: 20px;
     }
-    .riview__subSerch .board__btn a {
+    .reiview__subSearch .board__btn a {
         width: 107px;
         height: 50px;
         color: white;
@@ -487,25 +487,25 @@ input::-webkit-search-results-decoration{
         font-weight: 200;
         font-size: 16px;
     }
-    .riview__subSerch fieldset {
+    .reiview__subSearch fieldset {
         position: relative;
         width: fit-content;
     }
-    .riview__subSerch fieldset select {
+    .reiview__subSearch fieldset select {
         width: 90px;
         height: 45px;
         margin-right: 10px;
         font-weight: 400;
         font-size: 16px;
     }
-    .riview__subSerch fieldset select option {
+    .reiview__subSearch fieldset select option {
         font-size: 16px;
         font-weight: 400;
     }
-    .riview__subSerch fieldset select:focus{
+    .reiview__subSearch fieldset select:focus{
         outline: none;
     }
-    .riview__subSerch fieldset input {
+    .reiview__subSearch fieldset input {
         width: 200px;
         height: 45px;
         border: none;
@@ -520,14 +520,14 @@ input::-webkit-search-results-decoration{
     input::-webkit-search-results-decoration{
         display:none;
     }
-    .riview__subSerch fieldset input:focus {
+    .reiview__subSearch fieldset input:focus {
         outline: none;
     }
-    .riview__subSerch fieldset input::placeholder {
+    .reiview__subSearch fieldset input::placeholder {
         font-weight: 300;
         font-size: 16px;
     }
-    .riview__subSerch fieldset button {
+    .reiview__subSearch fieldset button {
         background-color: white;
         margin-left: 10px;
         cursor:pointer;
