@@ -114,7 +114,7 @@
 }
 
 /* board */
-table {
+.talk__table {
     width: 100%;
     border-spacing: 0px;
     border-collapse: collapse;
@@ -213,18 +213,18 @@ table {
     font-size: 12px;
     text-align: center;
 }
-.board__table table tbody tr:hover {
+.talk__board .talk__table tbody tr:hover {
     background-color: #f5f5f5;
 }
-.board__table table tbody tr td:nth-child(2) {
+.talk__board .talk__table tbody tr td:nth-child(2) {
     text-align: left;
 }
-.board__table table tbody tr td {
+.talk__board .talk__table tbody tr td {
     border-bottom: 1px dashed #e6e6e6;
     font-size: 16px;
     color: #323232;
 }
-.board__table table tbody tr td a {
+.talk__board .talk__table tbody tr td a {
     color: #323232;
 }
 .board__pages ul {

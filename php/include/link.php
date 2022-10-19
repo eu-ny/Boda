@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../assets/css/notice.css">
 <link rel="stylesheet" href="../assets/css/Review.css">
 <link rel="stylesheet" href="../assets/css/ReviewView.css">
+<link rel="stylesheet" href="../assets/css/ReviewWrite.css">
 <link rel="stylesheet" href="../assets/css/talk.css">
 
 <link rel="stylesheet" href="../assets/css/footer.css">

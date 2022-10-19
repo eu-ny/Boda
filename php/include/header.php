@@ -65,6 +65,7 @@
                 <path d="M1 31L27.9483 1M27.9483 31L1 1" stroke="#323232" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
     
+    
             <div class="smallmenu blind">
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="../login/agree.php">SIGN UP</a></li>

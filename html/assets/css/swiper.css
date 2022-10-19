@@ -181,7 +181,7 @@
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
-    top: 50%;
+    top: 42%;
     width: calc(var(--swiper-navigation-size) / 44 * 27);
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -190,7 +190,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    color: rgba(255,255,255,0.6);
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -211,7 +211,7 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-family: swiper-icons;
-    font-size: var(--swiper-navigation-size);
+    font-size: 2rem;
     text-transform: none !important;
     letter-spacing: 0;
     font-variant: initial;

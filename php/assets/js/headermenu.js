@@ -44,3 +44,7 @@ MBHamClose.addEventListener("click", () => {
     MBHamClose.classList.add("blind");
     MBmenu.classList.remove("overlay");
 });
+
+//search
+const searchBtn = document.querySelector(".header__right .search");
+let i = 0;

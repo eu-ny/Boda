@@ -319,6 +319,7 @@
                 </div>
             </section>
             <!-- //cardType -->
+
             <section class="mid__container">
                 <div class="board">
                     <div class="review__table">
@@ -329,7 +330,6 @@
                                 <col style="width: 12%" />
                                 <col style="width: 12%" />
                                 <col style="width: 12%" />
-                                <col style="width: 12%" />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -337,7 +337,7 @@
                                     <th>제목</th>
                                     <th>작성자</th>
                                     <th>날짜</th>
-                                    <th>추천수</th>
+                                    <!-- <th>추천수</th> -->
                                     <th>조회수</th>
                                 </tr>
                             </thead>
@@ -367,12 +367,12 @@
                 echo "<td><a href='ReviewView.php?myReviewID={$info['myReviewID']}'>".$info['ReviewTitle']."</a></td>";
                 echo "<td>".$info['youNickName']."</td>";
                 echo "<td>".date('Y-m-d', $info['ReviewregTime'])."</td>";
-                echo "<td>".$info['ReviewLike']."</td>";
+                // echo "<td>".$info['ReviewLike']."</td>";
                 echo "<td>".$info['ReviewView']."</td>";
                 echo "</tr>";
             }
         } else {
-            echo "<tr><td colspan='6'>게시글이 없습니다.</td></tr>";
+            echo "<tr><td colspan='5'>게시글이 없습니다.</td></tr>";
         }
     }
 ?>
@@ -387,11 +387,6 @@
                                 </tr> -->
                             </tbody>
                         </table>
-                        <div class="board__btn">
-                            <a href="ReviewWrite.php">
-                                글쓰기
-                            </a>
-                        </div>
                     </div>
 
                     <div class="review__table subTable">
@@ -413,7 +408,7 @@
                             <tbody>
                                 <tr>
                                     <td>10</td>
-                                    <td><a href="ReviewView.html">진짜 멋진 포토존 이 시대 최고의 전시</a></td>
+                                    <td><a href="ReviewView.php">진짜 멋진 포토존 이 시대 최고의 전시</a></td>
                                     <td>둘리</td>
                                     <td>2.4K / 1.1K</td>
                                 </tr>
@@ -483,6 +478,11 @@
                 </div>
 
                 <div class="riview__search">
+                    <div class="board__btn">
+                        <a href="ReviewWrite.php">
+                            글쓰기
+                        </a>
+                    </div>
                     <fieldset>
                         <legend></legend>
                         <select name="searchOption" id="searchOption">
