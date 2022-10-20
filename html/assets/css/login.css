@@ -67,6 +67,7 @@
     border: 1px solid #323232;
     accent-color: #323232;
     cursor: pointer;
+    appearance: button;
 }
 
 .find__tabContent .find-tab.hide {
