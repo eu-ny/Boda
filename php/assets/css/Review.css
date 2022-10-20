@@ -144,12 +144,16 @@
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     font-weight: 500;
     font-size: 18px;
     color: #323232;
 }
-.card__desc p {
+.card__desc .icon {
+    display: flex;
+    justify-content: space-between;
+}
+.card__desc .icon p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -157,16 +161,14 @@
     font-weight: 400;
     font-size: 16px;
     -webkit-box-orient: vertical;
-    margin-bottom: 30px;
-    color: #323232;
+    color: #888888;
 }
-.card__desc .icon {
+.card__desc .icon .views {
     display: flex;
-    justify-content: space-between;
 }
-.card__desc .icon div svg {
-}
-.card__desc .icon div span:nth-child(2) {
+
+.card__desc .icon .views span:nth-child(2) {
+    margin-left: 10px;
     color: #888888;
     font-size: 14px;
     font-weight: 300;
@@ -195,7 +197,7 @@
     }
     
     .card__desc h3 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         font-weight: 500;
         font-size: 14px;
         color: #323232;
@@ -209,10 +211,13 @@
         display: flex;
         justify-content: space-between;
     }
-    .card__desc .icon div svg {
+    .card__desc .icon p {
+        font-size: 14px;
+    }
+    .card__desc .icon .views svg {
         width: 16px;
     }
-    .card__desc .icon div span:nth-child(2) {
+    .card__desc .icon .views span:nth-child(2) {
         color: #888888;
         font-size: 12px;
         font-weight: 300;
@@ -230,18 +235,17 @@
     }
     
     .card__desc h3 {
-        margin-bottom: 15px;
+        margin-bottom: 40px;
         font-size: 18px;
     }
     .card__desc p {
         font-size: 16px;
-        margin-bottom: 30px;
     }
     .card__desc .icon {
         display: flex;
         justify-content: space-between;
     }
-    .card__desc .icon div span:nth-child(2) {
+    .card__desc .icon .views span:nth-child(2) {
         color: #888888;
         font-size: 14px;
         font-weight: 300;
@@ -259,14 +263,11 @@
 
 
 /* board */
-.review__board {
+.review {
     margin-bottom: 30px;
 }
-.board__head {
-    background-color: #323232;
-}
 
-table {
+.review__table {
     width: 100%;
     border-spacing: 0px;
     border-collapse: collapse;
@@ -275,20 +276,20 @@ table {
     table-layout: fixed;
 }
 
-.review__table table thead tr {
+.review__board .review__table thead tr {
     background-color: #323232;
     color: #f5f5f5;
 }
-.review__table table thead tr th {
+.review__board .review__table thead tr th {
     font-weight: 400;
     height: 54px;
     font-size: 18px;
 }
-.review__table table tbody tr:hover {
+.review__board .review__table tbody tr:hover {
     background-color: #f5f5f5;
 }
 
-.review__table table tbody tr td:nth-child(2) {
+.review__board .review__table tbody tr td:nth-child(2) {
     text-align: left;
     padding-left: 60px;
     white-space:nowrap;
@@ -296,52 +297,52 @@ table {
     overflow:hidden;
 }
 
-.review__table table tbody tr td {
+.review__board .review__table tbody tr td {
     text-align: center;
     height: 80px;
     border-bottom: 1px solid #e6e6e6;
     font-size: 16px;
     color: #323232;
 }
-.review__table table tbody tr td a {
+.review__board .review__table tbody tr td a {
     color: #323232;
 }
-/* table2 */
-.review__table.subTable {
+/* review__table2 */
+.review__board.subReview__board {
     display: none;
 }
-.review__table.subTable table thead tr th {
+.review__board.subReview__board .review__table thead tr th {
     font-size: 16px;
 }
-.review__table.subTable tr td {
+.review__board.subReview__board tr td {
     font-size: 15px;
 }
-.review__table.subTable table tbody tr td:nth-child(2) {
+.review__board.subReview__board .review__table tbody tr td:nth-child(2) {
     padding-left: 10px;
 }
-.review__table.subTable table tbody tr td:nth-child(4) {
+.review__board.subReview__board .review__table tbody tr td:nth-child(4) {
     font-size: 14px;
 }
-.review__table.subTable .board__btn {
+.review__board.subReview__board .board__btn {
     display: none;
 }
 
 /* search */
-.riview__search {
+.reiview__search {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 100px;
 } 
-.riview__subSerch {
+.reiview__subSearch {
     display: none;
 }
 
 /* write btn */
-.riview__search .board__btn {
+.reiview__search .board__btn {
     margin-left: 20px;
 }
-.riview__search .board__btn a {
+.reiview__search .board__btn a {
     width: 107px;
     height: 50px;
     color: white;
@@ -353,25 +354,25 @@ table {
     font-weight: 200;
     font-size: 16px;
 }
-.riview__search fieldset {
+.reiview__search fieldset {
     position: relative;
     margin-right: 20px;
 }
-.riview__search fieldset select {
+.reiview__search fieldset select {
     width: 100px;
     height: 45px;
     margin-right: 20px;
     font-weight: 400;
     font-size: 16px;
 }
-.riview__search fieldset select option {
+.reiview__search fieldset select option {
     font-size: 16px;
     font-weight: 400;
 }
-.riview__search fieldset select:focus{
+.reiview__search fieldset select:focus{
     outline: none;
 }
-.riview__search fieldset input {
+.reiview__search fieldset input {
     width: 200px;
     height: 45px;
     border: none;
@@ -386,14 +387,14 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
     display:none;
 }
-.riview__search fieldset input:focus {
+.reiview__search fieldset input:focus {
     outline: none;
 }
-.riview__search fieldset input::placeholder {
+.reiview__search fieldset input::placeholder {
     font-weight: 300;
     font-size: 16px;
 }
-.riview__search fieldset button {
+.reiview__search fieldset button {
     background-color: white;
     margin-left: 10px;
     cursor:pointer;
@@ -416,7 +417,7 @@ input::-webkit-search-results-decoration{
     padding: 10px;
     font-weight: 400;
 }
-.board__pages ul li a.active{
+.board__pages ul li a.active {
     color: #323232;
     font-weight: 600;
 }
@@ -432,23 +433,23 @@ input::-webkit-search-results-decoration{
     .main__header .menu li:nth-child(1) a {
         max-width: 160px;
     }
-    .review__table {
+    .review__board {
         display: none;
     }
-    .review__table.subTable {
+    .review__board.subReview__board {
         display: block;
     }
-    .review__table .board__btn a {
+    .review__board .board__btn a {
         display: block;
     }
-    .riview__search .board__btn {
+    .reiview__search .board__btn {
         text-align: left;
         margin-left: 0;
     }
-    .riview__search fieldset {
+    .reiview__search fieldset {
         margin-right: 0;
     }
-    .riview__search fieldset select {
+    .reiview__search fieldset select {
         width: 90px;
         margin-right: 10px;
         margin-top: 30px;
@@ -459,10 +460,10 @@ input::-webkit-search-results-decoration{
     .main__header .menu li:nth-child(1) a {
         max-width: 120px;
     }
-    .riview__search {
+    .reiview__search {
         display: none;
     }
-    .riview__subSerch {
+    .reiview__subSearch {
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
@@ -471,10 +472,10 @@ input::-webkit-search-results-decoration{
         margin-bottom: 30px;
     }
     /* write btn */
-    .riview__subSerch .board__btn {
+    .reiview__subSearch .board__btn {
         margin-left: 20px;
     }
-    .riview__subSerch .board__btn a {
+    .reiview__subSearch .board__btn a {
         width: 107px;
         height: 50px;
         color: white;
@@ -486,25 +487,25 @@ input::-webkit-search-results-decoration{
         font-weight: 200;
         font-size: 16px;
     }
-    .riview__subSerch fieldset {
+    .reiview__subSearch fieldset {
         position: relative;
         width: fit-content;
     }
-    .riview__subSerch fieldset select {
+    .reiview__subSearch fieldset select {
         width: 90px;
         height: 45px;
         margin-right: 10px;
         font-weight: 400;
         font-size: 16px;
     }
-    .riview__subSerch fieldset select option {
+    .reiview__subSearch fieldset select option {
         font-size: 16px;
         font-weight: 400;
     }
-    .riview__subSerch fieldset select:focus{
+    .reiview__subSearch fieldset select:focus{
         outline: none;
     }
-    .riview__subSerch fieldset input {
+    .reiview__subSearch fieldset input {
         width: 200px;
         height: 45px;
         border: none;
@@ -519,14 +520,14 @@ input::-webkit-search-results-decoration{
     input::-webkit-search-results-decoration{
         display:none;
     }
-    .riview__subSerch fieldset input:focus {
+    .reiview__subSearch fieldset input:focus {
         outline: none;
     }
-    .riview__subSerch fieldset input::placeholder {
+    .reiview__subSearch fieldset input::placeholder {
         font-weight: 300;
         font-size: 16px;
     }
-    .riview__subSerch fieldset button {
+    .reiview__subSearch fieldset button {
         background-color: white;
         margin-left: 10px;
         cursor:pointer;
@@ -534,10 +535,10 @@ input::-webkit-search-results-decoration{
         right: 5px;
         bottom: 13px;
     }
-    .review__table.subTable .board__btn {
+    .review__board.subReview__board .board__btn {
         margin-top: 30px;
     }
-    .review__table.subTable .board__btn a {
+    .review__board.subReview__board .board__btn a {
         width: 107px;
         height: 50px;
         color: white;
@@ -549,7 +550,7 @@ input::-webkit-search-results-decoration{
         font-weight: 200;
         font-size: 16px;
     }
-    .review__table table colgroup col:first-child {
+    .review__board .review__table colgroup col:first-child {
         width: 10%;
     }
 }

@@ -46,8 +46,16 @@ table {
 .view__table .view tbody tr td {
     color: black;
 }
+.view__table .view .viewImg {
+    text-align: center;
+}
+.view__table .view .viewImg p {
+    text-align: center;
+    margin-top: 20px;
+}
 .view__table .view tbody tr td img {
     width: 600px;
+    margin-bottom: 50px;
 }
 
 .view__bottom {
@@ -195,6 +203,8 @@ table {
     overflow: hidden;
     resize: none;
 }
+
+
 
 /* 미디어 쿼리 */
 @media (max-width: 960px) {

@@ -138,4 +138,14 @@ button {
 	text-indent: -9999px;
 }
 
+input[type=”text”], 
+input[type=”tel”], 
+input[type=”password”], 
+input[type=”email”], 
+input[type=”search”], 
+textarea { 
+    -webkit-border-radius:0; /* 모서리 스타일 제거 */ 
+    -webkit-appearance:none; /* 인풋내 그림자 제거 */ 
+}
+ 
 

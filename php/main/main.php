@@ -22,11 +22,9 @@
     <!-- //header -->
     <div style="height: 500px"></div>
     메인!!
-
-    <a href="../create/createTalk.php">Talk 테이블 만들기</a><br>
-    <a href="../create/createTalkData.php">Talk 테이블 데이터 만들기</a><br>
-    <a href="../create/createReview.php">review 테이블 만들기</a><br>
-    <a href="../create/createReviewData.php">review 테이블 데이터 만들기</a>
+<div class="ss">
+    반응형 왜 안되냐규,,
+</div>
 
 <?php include "../include/footer.php" ?>
 <!-- //footer -->

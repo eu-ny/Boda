@@ -1,16 +1,3 @@
-<li><a href="../create/createMember.php">myMember 테이블 만들기</a></li>
-11:18
-<li><a href="php/create/createMember.php">myMember 테이블 만들기</a></li>
-                        <li><a href="php/create/createTalk.php">Talk 테이블 만들기</a></li>
-                        <li><a href="php/create/createTalkData.php">Talk 테이블 데이터 만들기</a></li>
-                        <li><a href="php/create/createReview.php">review 테이블 만들기</a></li>
-                        <li><a href="php/create/createReviewData.php">review 테이블 데이터 만들기</a></li>
-
-
-
-
-
-11:19
 <!DOCTYPE html>
 <html lang="ko">
     <head>
