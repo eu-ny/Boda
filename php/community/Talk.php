@@ -89,7 +89,8 @@
     }
 
     $myTalkID = $_GET['myTalkID'];
-// 시험
+    
+    // 시험
     $sql = "SELECT m.youNickName, t.TalkContents, t.regTime FROM myTalk t JOIN myMember m ON(m.myMemberID = t.myMemberID) WHERE t.myTalkID = {$myTalkID}";
     $result = $connect -> query($sql);
 
