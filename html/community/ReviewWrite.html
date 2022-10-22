@@ -212,11 +212,15 @@
                                 <input onclick="clearInput()" class="pt" type="file" name="reviewFile" id="reviewFile" accept=".jpg, .jpeg, .png, .gif" placeholder="jpg(jpeg), png, gif 파일만 첨부 가능합니다.">
                                 <label for="reviewFile" class="photo"></label>
                             </div>
-                            <div class="center"></div>
-                            <div class="left"></div>
-                            <div class="right"></div>
-                            <div class="icon_U"></div>
-                            <div class="icon_B"></div>
+                            <div class="center__icon">
+                                <div class="center"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                            <div class="right__icon">
+                                <div class="icon_U"></div>
+                                <div class="icon_B"></div>
+                            </div>
                         </div>
                         <div class="review__write__board">
                             <div class="review__write">
@@ -231,11 +235,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="review__write__bottom">
-                                <div class="btn">
-                                    <a href="Review.php">목록</a>
-                                    <button type="submit" value="저장">저장</button>
-                                </div>
+                            <div class="review__writeBtn">
+                                <a id="rListBtn" href="Review.php">목록</a>
+                                <button id="rSaveBtn"  type="submit" value="저장">저장</button>
                             </div>
                         </div>
                     </fieldset>
