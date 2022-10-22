@@ -68,6 +68,10 @@
     border-left: 1px solid #D0D0D0;
 }
 
+.board__total {
+    font-size: 14px;
+    margin: 0 0 10px 5px;
+}
 
 /* board */
 .notice__table {
@@ -135,19 +139,6 @@
     margin-top: 30px;
 }
 
-/* board table2 */
-.notice__board2 {
-    display: none;
-}
-.notice__board2 .notice__table {
-    table-layout: fixed;
-}
-.notice__board2 .notice__table tbody tr td:nth-child(2) {
-    text-align: center;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-    overflow:hidden;
-}
 
 /* notice__search */
 .notice__search {
@@ -223,48 +214,14 @@ input::-webkit-search-results-decoration{
 
 /* 미디어쿼리 */
 @media (max-width: 1000px) {
-    .notice__search {
-        position: static;
-        margin-bottom: 40px;
-    }
-    /* .notice__search fieldset input {
-        width: 150px;
-    } */
-    .notice__board .notice__table tbody tr td.content {
-        padding: 40px 60px;
-    }
+
 }
 
 @media (max-width: 600px) {
-    .notice__board {
-        display: none;
-    }
-    .notice__board2 {
-        display: block;
-    }
-    .notice__search {
-        width: 100%;
-        justify-content: center;
-    }
-    .notice__header .home {
-        display: none;
-    }
-    .notice__board2 .notice__table thead tr th {
-        font-size: 16px;
-    }
-    .notice__board2 .notice__table tbody tr td {
-        font-size: 14px;
-    }
-    .notice__board2 .notice__table tbody tr td.content {
-        padding: 40px 20px;
-    }
-    .notice__board2 colgroup col:nth-child(3){
-        display: none;
-    }
 }
 
 @media (max-width: 480px) {
-    .notice__search fieldset select {
-        width: 90px;
+    .boardHide {
+        
     }
 }

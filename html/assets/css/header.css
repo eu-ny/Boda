@@ -234,7 +234,7 @@
         text-align: right;
         z-index: 10;
         transition: right 0.4s ease-in;
-        height: 100vh;
+        height: 10000vh;
         overflow-y: scroll;
     }
 
@@ -314,7 +314,6 @@
 @media (max-width: 600px) {
     .mobilemenu {
         padding: 20px 30px 100px;
-
     }
 }
 

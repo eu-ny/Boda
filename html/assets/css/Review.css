@@ -51,9 +51,11 @@
     bottom: 100px;    
     right: 20px;
 }
+
 .main__header .home span:nth-child(1) {
     margin-right: 25px;
 }
+
 .main__header .home span:nth-child(2){
     color: #b0b0b0;
     font-weight: 200;
@@ -61,7 +63,6 @@
     padding-left: 25px;
     border-left: 1px solid #D0D0D0;
 }
-
 
 
 /* cardType */
@@ -91,6 +92,7 @@
 .card .cardImgBox {
     overflow: hidden;
 }
+
 /* .card:hover {
     border: 5px solid #000;
 } */
@@ -102,9 +104,11 @@
     transition: all 0.3s ease-in-out;
     transform: scale(1)
 }
+
 .card .cardImgBox img:hover {
     transform: scale(1.1);
 }
+
 .card::before {
     content: "BEST1";
     text-align: center;
@@ -121,9 +125,11 @@
     height: 37px;
     z-index: 2;
 }
+
 .card:nth-child(2)::before {
     content: "BEST2";
 }
+
 .card:nth-child(3)::before {
     content: "BEST3";
 }
@@ -144,10 +150,12 @@
     font-size: 18px;
     color: #323232;
 }
+
 .card__desc .icon {
     display: flex;
     justify-content: space-between;
 }
+
 .card__desc .icon p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -158,6 +166,7 @@
     -webkit-box-orient: vertical;
     color: #888888;
 }
+
 .card__desc .icon .views {
     display: flex;
 }
