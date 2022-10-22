@@ -231,27 +231,16 @@
 .talk__board .talk__table tbody tr td a {
     color: #323232;
 }
-.board__pages ul {
-    display: flex;
-    justify-content: center;
-}
-.board__pages ul li a{
-    display: flex;
-    justify-content: center;
-    color: #888888;
-    font-size: 16px;
-    padding: 10px;
-    font-weight: 400;
-}
-.board__pages ul li a.active{
-    color: #323232;
-    font-weight: 600;
-}
+
+
+
 
 /* blind */
 fieldset #talkContents:focus {
     outline: none;
 }
+
+
 /* 미디어쿼리 */
 @media (max-width:800px) {
     .main__header h2:nth-child(2) {

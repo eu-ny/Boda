@@ -179,6 +179,7 @@
 	margin-left: 15px;
 	font-weight: 200;
 	font-size: 16px;
+	cursor: pointer;
 }
 
 
@@ -203,7 +204,10 @@
 
 	.link .pt[type=file] {
 		width: 60%;
+		padding: 0px;
+		font-size: 11px;
 	}
+
 	.center__icon {
 		width: 30%;
 	}
@@ -232,9 +236,17 @@
 		padding-right: 0;
 	}
 
+	.link .photo {
+		margin-left: 7%;
+	}
+
 	.center__icon,
 	.right__icon {
 		width: initial;
+	}
+
+	.center__icon .right {
+		margin-left: 3px;
 	}
 
 	.mid__icon .link::before {
@@ -253,6 +265,7 @@
 	.review__writeBtn {
 		justify-content: space-between;
 	}
+
 	#rListBtn {
 		margin-left: 0;
 	}

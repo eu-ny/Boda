@@ -37,6 +37,34 @@
     left: 5px;
 }
 
+/* board total */
+.board__total {
+    font-size: 14px;
+    margin: 0 0 10px 5px;
+}
+
+/* board pages */
+.board__pages {
+    margin-top: 70px;
+}
+.board__pages ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board__pages ul li a {
+    display: flex;
+    justify-content: center;
+    color: #888888;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+}
+.board__pages ul li a.active {
+    color: #323232;
+    font-weight: 600;
+}
+
 /* 미디어쿼리 */
 @media (max-width:960px) {
     .container {

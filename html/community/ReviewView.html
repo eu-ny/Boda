@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="../assets/css/Review.css">
         <link rel="stylesheet" href="../assets/css/ReviewView.css">
         <link rel="stylesheet" href="../assets/css/ReviewWrite.css">
-        <link rel="stylesheet" href="../assets/css/talk.css">
+        <!-- <link rel="stylesheet" href="../assets/css/talk.css"> -->
 
         <link rel="stylesheet" href="../assets/css/footer.css">
 
@@ -207,9 +207,9 @@
                     <div class="view__table">
                         <table class="view">
                             <colgroup>
-                                <col style="width: 16%" />
+                                <col style="width: 20%" />
                                 <col style="width: 60%" />
-                                <col style="width: 16%" />
+                                <col style="width: 20%" />
                             </colgroup>
                             <thead>
                                 <tr>
@@ -222,11 +222,14 @@
                                 <tr>
                                     <td colspan="3">
                                         <div class="height">
-                                        <figure class="viewImg">
-                                            <img src="../assets/img/review_W_01.jpg" alt="EXHIBITION">
-                                            <p>오랜만에 전시회 다녀왔습니다.</p>
-                                            <p>새로운 전시들이 많이 보여서 고르는 데 힘이 들었네요~ㅎㅎ</p>
-                                        </figure>
+                                            <figure class="viewImg">
+                                                <img src="../assets/img/review_W_01.jpg" alt="EXHIBITION">
+                                            </figure>
+                                            <div class="view__desc">
+                                                <p>오랜만에 전시회 다녀왔습니다.</p>
+                                                <p>새로운 전시들이 많이 보여서 고르는 데 힘이 들었네요~ㅎㅎ</p>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -254,9 +257,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="bestcomments">
+                <div class="comment__wrap">
                     <form action="" name="" method="">
-                        <fieldset>
+                        <fieldset class="comment__inner">
                             <legend>댓글 작성 영역</legend>
                             <div class="commentBox">
                                 <label for="bestcomments">내용</label>
@@ -276,9 +279,11 @@
                             <div class="contents">
                                 <div class="contents__top">
                                     <p class="name"><span class="ir">작성자</span><span>댕댕이</span></p>
-                                    <p class="date"><span class="ir">작성일</span><span>| 2022-09-18</span></p>
-                                    <a href="#" class="modify">| 수정</a>
-                                    <a href="#" class="remove">| 삭제</a>
+                                    <div class="dateBox">
+                                        <p class="date"><span class="ir">작성일</span><span>2022-09-18</span></p>
+                                        <!-- <a href="#" class="modify">| 수정</a>
+                                        <a href="#" class="remove">| 삭제</a> -->
+                                    </div>
                                 </div>
                                 <div class="contents__bottom">
                                     <span>삼대가 망하시길 바랍니다.</span>
@@ -290,10 +295,12 @@
                             </div>
                             <div class="contents">
                                 <div class="contents__top">
-                                    <p class="name"><span class="ir">작성자</span><span>머릿고기</span></p>
-                                    <p class="date"><span class="ir">작성일</span><span>| 2022-09-18</span></p>
-                                    <a href="#" class="modify">| 수정</a>
-                                    <a href="#" class="remove">| 삭제</a>
+                                    <p class="name"><span class="ir">작성자</span><span>머릿고기머릿고기머릿고기머릿</span></p>
+                                    <div class="dateBox">
+                                        <p class="date"><span class="ir">작성일</span><span>2022-09-18</span></p>
+                                        <a href="#" class="modify">| 수정</a>
+                                        <a href="#" class="remove">| 삭제</a>
+                                    </div>
                                 </div>
                                 <div class="contents__bottom">
                                     <span>배고픈데 건드리지 마세요.</span>

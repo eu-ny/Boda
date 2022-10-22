@@ -209,7 +209,7 @@
                         <legend class="blind">리뷰 게시글 작성 영역</legend>
                         <div class="mid__icon">
                             <div class="link">
-                                <input onclick="clearInput()" class="pt" type="file" name="reviewFile" id="reviewFile" accept=".jpg, .jpeg, .png, .gif" placeholder="jpg(jpeg), png, gif 파일만 첨부 가능합니다.">
+                                <input onclick="fileReset(this.form)" class="pt" type="file" name="reviewFile" id="reviewFile" accept=".jpg, .jpeg, .png, .gif" placeholder="jpg(jpeg), png, gif 파일만 첨부 가능합니다.">
                                 <label for="reviewFile" class="photo"></label>
                             </div>
                             <div class="center__icon">
@@ -243,7 +243,7 @@
                     </fieldset>
                 </form>
             </section>
-            <!--  -->
+            <!-- //review write board  -->
 
         </main>
         <footer id="footer">
@@ -320,5 +320,11 @@
 
         <script src="../assets/js/headermenu.js"></script>
         <script src="../assets/js/loginpopup.js"></script>
+        <script>
+             function fileReset(form){
+                form.pt.select();    
+                document.selection.clear();
+            }
+        </script>
     </body>
 </html>
