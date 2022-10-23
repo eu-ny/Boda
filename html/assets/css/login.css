@@ -23,13 +23,13 @@
 .find__ID ul li a {
     padding-bottom: 10px;
     font-size: 18px;
-    color: #888;
+    color: #666;
 }
 
 .find__ID ul li a.active,
 .find__ID ul li a:hover  {
-    color: #323232;
-    border-bottom: 2px solid #323232;
+    color: #000;
+    border-bottom: 2px solid #000;
 }
 
 .find__contents {
@@ -43,7 +43,7 @@
     display: inline-block;
     margin-bottom: 10px;
     font-size: 20px;
-    color: #323232;
+    color: #000;
 }
 .find__contents .find-name {
     margin-bottom: 20px;
@@ -64,8 +64,8 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #323232;
-    accent-color: #323232;
+    border: 1px solid #000;
+    accent-color: #000;
     cursor: pointer;
     appearance: button;
 }
@@ -80,8 +80,8 @@
     border-radius: 10px;
     line-height: 1;
     padding-left: 30px;
-    color: #323232;
-    border: 1px solid #b0b0b0;
+    color: #000;
+    border: 1px solid #d9d9d9;
     box-sizing: border-box;
     font-size: 18px;
 }
@@ -89,7 +89,6 @@
 .youID::placeholder,
 .youEmail::placeholder,
 .youPhone::placeholder {
-    color: #b0b0b0;
     font-size: 18px;
 }
 

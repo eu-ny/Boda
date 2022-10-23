@@ -151,7 +151,7 @@ input {
 input:checked[type="checkbox"] {
 	background-color:transparent;
 	-webkit-appearance:checkbox;
-} 
+}
 
 input[type="text"],
 input[type="password"],
@@ -162,6 +162,9 @@ input[type="tel"],
 textarea {
 	background-color:transparent;
 	-webkit-appearance: none;
+}
+input::placeholder {
+	color: #b0b0b0;
 }
 
 input:focus { outline: none; }
@@ -174,5 +177,5 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 body {
-	background: #fbfbfb;
+	background: #fcfcfc;
 }

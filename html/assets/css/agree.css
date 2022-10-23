@@ -41,7 +41,7 @@
     font-size: 16px;
     height: 40px;
     padding-left: 10px;
-    background-color: #323232;
+    background-color: #000;
     align-items: center;
     display: flex;
     color: #fff;
@@ -57,7 +57,7 @@ input[type="checkbox"] + label {
     width: 20px;
     height: 20px;
     background-color: #fff;
-    border: 2px solid #323232;
+    border: 2px solid #000;
     position: relative;
     cursor: pointer;
     margin-right: 20px;
@@ -155,7 +155,7 @@ input[id="check4"]:checked + label::after {
     height: auto;
     max-width: 100%;
     min-height: 50px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 0;
 }
 
@@ -175,7 +175,7 @@ input[id="check4"]:checked + label::after {
     border-radius: 10px;
     font-size: 20px;
     box-sizing: border-box;
-    border: 1px solid #323232;
+    border: 1px solid #000;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -183,7 +183,7 @@ input[id="check4"]:checked + label::after {
 }
 
 .Btn:hover {
-    background-color: #323232;
+    background-color: #000;
     color: #fff;
 }
 
@@ -234,8 +234,8 @@ input[id="check4"]:checked + label::after {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #323232;
-    accent-color: #323232;
+    border: 1px solid #000;
+    accent-color: #000;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -298,7 +298,7 @@ input[id="check4"]:checked + label::after {
 
 .btn1 {
     padding: 20px;
-    background-color: #323232;
+    background-color: #000;
     border-radius: 10px;
     color: white;
     font-size: 18px;
@@ -347,7 +347,7 @@ input[id="check4"]:checked + label::after {
 }
 .modalBox p {
     font-size: 20px;
-    color: #323232;
+    color: #000;
     margin: 60px 0;
     text-align: center;
     word-break: keep-all;

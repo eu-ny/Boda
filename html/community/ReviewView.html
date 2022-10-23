@@ -41,7 +41,7 @@
         <header id="header" class="header__container">
             <div class="header__area">
                 <div class="header__logo">
-                    <a href="#">BODA</a>
+                    <a href="main.html">BODA</a>
                 </div>
                 <div class="header__menu">
                     <ul>
@@ -66,7 +66,7 @@
                     </ul>
                     <ul>
                         <li>
-                            <a class="main__menu" href="#">COMMUNITY</a>
+                            <a class="main__menu" href="../community/Review.html">COMMUNITY</a>
                             <ul class="sub blind">
                                 <li><a href="../community/Review.html">REVIEW</a></li>
                                 <li><a href="../community/Talk.html">TALK</a></li>
@@ -127,7 +127,8 @@
                                 <li><a href="#">직접 검색</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">COMMUNITY</a>
+                        <li>
+                            <a class="main__menu" href="../community/Review.html">COMMUNITY</a>
                             <ul>
                                 <li><a href="../community/Review.html">REVIEW</a></li>
                                 <li><a href="../community/Talk.html">TALK</a></li>
@@ -192,11 +193,9 @@
                 <h2>TODAY's</h2>
                 <h2>Review</h2>
                 <div class="home">
-                <span><a href="#">
-                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 17V11H12V17H17V9H20L10 0L0 9H3V17H8Z" fill="#323232"/>
-                    </svg>
-                    </a></span><span>ALL REVIEW</span></div>
+                    <span class="home_icon"></span>
+                    <span>REVIEW</span>
+                </div>
                 <div class="menu">
                     <li><a href="Review.html">REVIEW</a></li>
                     <li><a href="Talk.html" class="active">TALK</a></li>
@@ -213,9 +212,18 @@
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th>동동이</th>
-                                    <th>오랜만에 행복한 주말 보내기</th>
-                                    <th>2022-09-18</th>
+                                    <div class="view__thBox">
+                                        <th class="view__thBox">동동이</th>
+                                        <th class="view__thBox">오랜만에 행복한 주말 보내기</th>
+                                        <th class="view__thBox">2022-09-18</th>
+                                    </div>
+                                    <th class="view__thMobileBox">
+                                        <p>Alpaca 작가의 '시선. 그리고 보다'를 관람하며</p>
+                                        <div class="thMobile__BT">
+                                            <p>TOMETO</p>
+                                            <p>2022-10-22</p>
+                                        </div>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -272,13 +280,13 @@
                             </div>
                         </fieldset>
                     </form>
-                    <div class="bestcommentsList">
+                    <div class="commentsList">
                         <div class="comment comment_1">
                             <div class="profile">
                             </div>
                             <div class="contents">
                                 <div class="contents__top">
-                                    <p class="name"><span class="ir">작성자</span><span>댕댕이</span></p>
+                                    <p class="name"><span class="ir">작성자</span><span>전시 러버 인간</span></p>
                                     <div class="dateBox">
                                         <p class="date"><span class="ir">작성일</span><span>2022-09-18</span></p>
                                         <!-- <a href="#" class="modify">| 수정</a>
@@ -286,7 +294,7 @@
                                     </div>
                                 </div>
                                 <div class="contents__bottom">
-                                    <span>삼대가 망하시길 바랍니다.</span>
+                                    <span>아 Alpaca작가 전시 좋죠~! 작가님은 우리가 보지 못하는 사회의 이면을 잘 다루는 듯 합니다.</span>
                                 </div>
                             </div>
                         </div>
@@ -295,7 +303,7 @@
                             </div>
                             <div class="contents">
                                 <div class="contents__top">
-                                    <p class="name"><span class="ir">작성자</span><span>머릿고기머릿고기머릿고기머릿</span></p>
+                                    <p class="name"><span class="ir">작성자</span><span>KIM LOVE</span></p>
                                     <div class="dateBox">
                                         <p class="date"><span class="ir">작성일</span><span>2022-09-18</span></p>
                                         <a href="#" class="modify">| 수정</a>
@@ -303,14 +311,16 @@
                                     </div>
                                 </div>
                                 <div class="contents__bottom">
-                                    <span>배고픈데 건드리지 마세요.</span>
+                                    <span>유익한 리뷰네요~ㅎㅎ</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="topBtn ir">top</div>
         </main>
+        <!-- //main -->
 
         <footer id="footer">
             <div class="footer__container">
@@ -383,8 +393,10 @@
                 <div class="footer__bottom">ⓒ 2022 BY BODA ALL RIGHT RESERVED.</div>
             </div>
         </footer>
+        <!-- //footer -->
 
         <script src="../assets/js/headermenu.js"></script>
         <script src="../assets/js/loginpopup.js"></script>
+        <script src="../assets/js/topBtn.js"></script>
     </body>
 </html>

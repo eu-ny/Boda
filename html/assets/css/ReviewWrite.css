@@ -30,7 +30,7 @@
 	width: 30px;
 	height: 30px;
 	display: inline-block;
-	background-image: url("data:image/svg+xml,%3Csvg width='20' height='24' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM16 16H2V2H16V16ZM10.96 9.29L8.21 12.83L6.25 10.47L3.5 14H14.5L10.96 9.29Z' fill='%23323232' /%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='24' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H16C17.1 18 18 17.1 18 16V2C18 0.9 17.1 0 16 0ZM16 16H2V2H16V16ZM10.96 9.29L8.21 12.83L6.25 10.47L3.5 14H14.5L10.96 9.29Z' fill='%23000' /%3E%3C/svg%3E");
 	background-position: center center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -55,7 +55,7 @@
 .center__icon .center {
 	width: 30px;
 	height: 30px;
-	background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4658)'%3E%3Cpath d='M3 21H21V19H3V21ZM3 17H21V15H3V17ZM3 13H21V11H3V13ZM3 9H21V7H3V9ZM3 3V5H21V3H3Z' fill='%23323232' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4658'%3E%3Crect width='24' height='24'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4658)'%3E%3Cpath d='M3 21H21V19H3V21ZM3 17H21V15H3V17ZM3 13H21V11H3V13ZM3 9H21V7H3V9ZM3 3V5H21V3H3Z' fill='%23000' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4658'%3E%3Crect width='24' height='24'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 	background-position: center center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -63,7 +63,7 @@
 .center__icon .left {
 	width: 30px;
 	height: 30px;
-	background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4661)'%3E%3Cpath d='M15 15H3V17H15V15ZM15 7H3V9H15V7ZM3 13H21V11H3V13ZM3 21H21V19H3V21ZM3 3V5H21V3H3Z' fill='%23323232' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4661'%3E%3Crect width='24' height='24' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml, %3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4661)'%3E%3Cpath d='M15 15H3V17H15V15ZM15 7H3V9H15V7ZM3 13H21V11H3V13ZM3 21H21V19H3V21ZM3 3V5H21V3H3Z' fill='%23000' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4661'%3E%3Crect width='24' height='24' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 	background-position: center center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -71,7 +71,7 @@
 .center__icon .right {
 	width: 30px;
 	height: 30px;
-	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4664)'%3E%3Cpath d='M3 21H21V19H3V21ZM9 17H21V15H9V17ZM3 13H21V11H3V13ZM9 9H21V7H9V9ZM3 3V5H21V3H3Z' fill='%23323232' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4664'%3E%3Crect width='24' height='24' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4664)'%3E%3Cpath d='M3 21H21V19H3V21ZM9 17H21V15H9V17ZM3 13H21V11H3V13ZM9 9H21V7H9V9ZM3 3V5H21V3H3Z' fill='%23000' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4664'%3E%3Crect width='24' height='24' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 	background-position: 0;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -98,7 +98,7 @@
 .mid__icon .icon_U {
 	width: 30px;
 	height: 30px;
-	background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4673)'%3E%3Cpath d='M12 17C15.31 17 18 14.31 18 11V3H15.5V11C15.5 12.93 13.93 14.5 12 14.5C10.07 14.5 8.5 12.93 8.5 11V3H6V11C6 14.31 8.69 17 12 17ZM5 19V21H19V19H5Z' fill='%23323232' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4673'%3E%3Crect width='24' height='24' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4673)'%3E%3Cpath d='M12 17C15.31 17 18 14.31 18 11V3H15.5V11C15.5 12.93 13.93 14.5 12 14.5C10.07 14.5 8.5 12.93 8.5 11V3H6V11C6 14.31 8.69 17 12 17ZM5 19V21H19V19H5Z' fill='%23000' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4673'%3E%3Crect width='24' height='24' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-position: center center;
 	cursor: pointer;
@@ -107,7 +107,7 @@
 .icon_B {
 	width: 30px;
 	height: 30px;
-	background-image: url("data:image/svg+xml, %3Csvg width='28' height='28' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4667)'%3E%3Cpath d='M16.25 11.2394C17.2604 10.5415 17.9687 9.39567 17.9687 8.33317C17.9687 5.979 16.1458 4.1665 13.802 4.1665H7.29163V18.7498H14.625C16.802 18.7498 18.4895 16.979 18.4895 14.8019C18.4895 13.2186 17.5937 11.8644 16.25 11.2394ZM10.4166 6.77067H13.5416C14.4062 6.77067 15.1041 7.46859 15.1041 8.33317C15.1041 9.19775 14.4062 9.89567 13.5416 9.89567H10.4166V6.77067ZM14.0625 16.1457H10.4166V13.0207H14.0625C14.927 13.0207 15.625 13.7186 15.625 14.5832C15.625 15.4478 14.927 16.1457 14.0625 16.1457Z' fill='%23323232' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4667'%3E%3Crect width='25' height='25' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");	
+	background-image: url("data:image/svg+xml, %3Csvg width='28' height='28' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_632_4667)'%3E%3Cpath d='M16.25 11.2394C17.2604 10.5415 17.9687 9.39567 17.9687 8.33317C17.9687 5.979 16.1458 4.1665 13.802 4.1665H7.29163V18.7498H14.625C16.802 18.7498 18.4895 16.979 18.4895 14.8019C18.4895 13.2186 17.5937 11.8644 16.25 11.2394ZM10.4166 6.77067H13.5416C14.4062 6.77067 15.1041 7.46859 15.1041 8.33317C15.1041 9.19775 14.4062 9.89567 13.5416 9.89567H10.4166V6.77067ZM14.0625 16.1457H10.4166V13.0207H14.0625C14.927 13.0207 15.625 13.7186 15.625 14.5832C15.625 15.4478 14.927 16.1457 14.0625 16.1457Z' fill='%23000' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_632_4667'%3E%3Crect width='25' height='25' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");	
 	background-repeat: no-repeat;
 	background-position: center 1px;
 	cursor: pointer;
@@ -122,7 +122,7 @@
 	font-weight: 300;
 	font-style: normal;
 	margin-bottom: 15px;
-	color: #323232;
+	color: #000;
 }
 
 .writeBox .Title {
@@ -157,13 +157,13 @@
 	width: 107px;
 	height: 50px;
 	color: white;
-	background-color: #323232;
+	background-color: #000;
 	display: inline-block;
 	border-radius: 10px;
 	text-align: center;
 	line-height: 50px;
 	margin-left: 15px;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 16px;
 }
 
@@ -171,13 +171,13 @@
 	width: 107px;
 	height: 50px;
 	color: white;
-	background-color: #323232;
+	background-color: #000;
 	display: inline-block;
 	border-radius: 10px;
 	text-align: center;
 	line-height: 50px;
 	margin-left: 15px;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 16px;
 	cursor: pointer;
 }

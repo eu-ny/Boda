@@ -79,7 +79,6 @@
 
 .userID::placeholder,
 .userPass::placeholder {
-    color: #b0b0b0;
     font-size: 18px;
 }
 
@@ -116,6 +115,7 @@
 }
 .login__footer .join__btn a:hover {
     background: #000;
+    border: 1px solid #000;
     color: #fff;
 }
 
