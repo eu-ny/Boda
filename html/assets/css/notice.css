@@ -172,7 +172,7 @@
     padding: 40px 100px;
     font-size: 16px;
     color: #000;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform: translateY(0);
 }
 .notice__table tbody tr td.content.blind {
@@ -226,7 +226,7 @@
         font-size: 15px;
     }
     /* 모바일 테이블*/
-    .boardHide {
+    .mobile__table {
         display: none;
     }
     .notice__table colgroup col:nth-child(2) {

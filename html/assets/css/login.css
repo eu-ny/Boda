@@ -33,7 +33,10 @@
 }
 
 .find__contents {
-    margin-top: 80px;
+    /* margin-top: 80px; */
+}
+.findBox {
+    margin-bottom: 80px;
 }
 
 .find__contents .findForm {

@@ -21,7 +21,7 @@
 
 .header__area {
     background-color: white;
-    /* border-bottom: 1px solid #d9d9d9; */
+    border-bottom: 1px solid #d9d9d9;
     box-sizing: border-box;
     padding: 0 60px;
     text-align: center;
@@ -186,15 +186,15 @@
     }
     .header__right .ham__mobile {
         position: absolute;
-        right: 20px;
-        top: 23px;
+        right: 30px;
+        top: 18px;
         cursor: pointer;
         display: none;
     }
     .header__right .ham__mobile__close {
         position: absolute;
-        right: 28px;
-        top: 26px;
+        right: 37px;
+        top: 22px;
         cursor: pointer;
         display: none;
     }
@@ -202,7 +202,7 @@
         height: 0;
     }
     .header__area {
-        height: 80px;
+        height: 70px;
     }
     .header__menu .main__menu {
         display: none;
@@ -225,7 +225,7 @@
 
     .mobilemenu {
         position: fixed;
-        top: 80px;
+        top: 70px;
         width: 100%;
         box-sizing: border-box;
         background-color: #fff;
@@ -235,8 +235,7 @@
         text-align: right;
         z-index: 10;
         transition: right 0.4s ease-in;
-        height: 10000vh;
-        overflow-y: scroll;
+        height: 1000vh;
     }
 
     .mobilemenu.overlay {
