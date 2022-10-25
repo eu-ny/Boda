@@ -24,6 +24,7 @@
 
 .card .cardImgBox {
     overflow: hidden;
+    max-height: 260px;
 }
 
 /* .card:hover {
@@ -32,6 +33,7 @@
 
 .card .cardImgBox img {
     width: 100%;
+    /* height: 100%; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transition: all 0.3s ease-in-out;
@@ -121,23 +123,22 @@
     }
 }
 
-@media(max-width: 840px){
+@media(max-width: 860px){
     .card::before {
-        line-height: 27px;
+        line-height: 31px;
         font-size: 14px;
         top: 15px;
         left: 15px;
         width: 75px;
-        height: 27px;
+        height: 30px;
     }
     .card__desc {
         padding: 20px 15px 10px 15px;
     }
     
     .card__desc h3 {
-        margin-bottom: 30px;
-        font-weight: 500;
-        font-size: 14px;
+        margin-bottom: 25px;
+        font-size: 16px;
         color: #000;
     }
     .card__desc p {
@@ -196,6 +197,12 @@
     }
     .main__header h2:nth-child(2) {
         margin-bottom: 80px;
+    }
+    .card:nth-child(2)::before {
+        content: "BEST2";
+    }
+    .card:nth-child(3)::before {
+        content: "BEST3";
     }
 }
 
@@ -304,7 +311,7 @@
 
 .review__board .review__table tbody tr td {
     text-align: center;
-    height: 80px;
+    height: 100px;
     border-bottom: 1px solid #e6e6e6;
     font-size: 16px;
     color: #000;

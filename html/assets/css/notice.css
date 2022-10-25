@@ -127,7 +127,7 @@
     font-family: "scoredream";
     font-weight: 400;
     font-style: normal;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     table-layout: fixed;
 }
 
@@ -172,7 +172,7 @@
     padding: 40px 100px;
     font-size: 16px;
     color: #000;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.29, 1.05, 0.78, 1.02);
     transform: translateY(0);
 }
 .notice__table tbody tr td.content.blind {
@@ -190,6 +190,23 @@
     height: 190px;
     overflow-y: scroll;
     margin-top: 30px;
+}
+
+.notice__btn {
+    margin: 0 10px 90px 0;
+    text-align: right;
+}
+.notice__btn a {
+    width: 107px;
+    height: 50px;
+    color: white;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 200;
+    font-size: 16px;
 }
 
 

@@ -5,11 +5,13 @@ const submenu = document.querySelectorAll(".header__menu ul li .sub");
 header.addEventListener("mouseover", () => {
     submenu.forEach((el) => {
         el.classList.remove("blind");
+        el.style.transform = "translateY(0px)";
     });
 });
 header.addEventListener("mouseout", () => {
     submenu.forEach((el) => {
         el.classList.add("blind");
+        el.style.transform = "translateY(-30px)";
     });
 });
 
@@ -22,12 +24,14 @@ menuBtn.addEventListener("click", () => {
     smallmenu.classList.remove("blind");
     menuBtnClose.classList.remove("blind");
     menuBtn.classList.add("blind");
+    smallmenu.style.transform = "translateY(0px)";
 });
 
 menuBtnClose.addEventListener("click", () => {
     smallmenu.classList.add("blind");
     menuBtnClose.classList.add("blind");
     menuBtn.classList.remove("blind");
+    smallmenu.style.transform = "translateY(-30px)";
 });
 
 // media ham
@@ -46,5 +50,5 @@ MBHamClose.addEventListener("click", () => {
 });
 
 //search
-const searchBtn = document.querySelector(".header__right .search");
-let i = 0;
+// const searchBtn = document.querySelector(".header__right .search");
+// let i = 0;

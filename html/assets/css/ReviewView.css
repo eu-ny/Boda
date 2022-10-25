@@ -216,6 +216,14 @@
     background-image: url(https://user-images.githubusercontent.com/106949433/197361111-6845d3b2-87b9-4b42-9166-6a8fa471c088.jpg);
 }
 
+.comment .contents .contents__top .modify,
+.comment .contents .contents__top .remove {
+    background-color: white;
+    padding: 0 5px 0 0;
+    cursor: pointer;
+    color: #B0B0B0;
+}
+
 /* blind */
 .comment__wrap .comment__inner .viewClass:focus {
     outline: none;
@@ -256,6 +264,35 @@
 @media (max-width: 600px) {
     .main__header .menu li:nth-child(1) a {
         max-width: 160px;
+    }
+
+    .view__table .view .view__thBox{
+        display: none;
+    }
+    .view__table .view .view__thMobileBox {
+        display: block;
+        padding: 0 10px;
+        margin: 25px 0;
+    }
+    .view__table .view .view__thMobileBox > p {
+        line-height: 1.6;
+        font-weight: 500;
+        word-break: keep-all;
+    }
+
+    .view__table .view .view__thMobileBox .thMobile__BT {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 10px;
+        color: #b0b0b0;
+    }
+    .view__table .view .view__thMobileBox .thMobile__BT > p:nth-child(2) {
+        margin-left: 20px;
+    }
+    .view__table .view colgroup col:nth-child(1) {
+        width: 100% !important;
     }
 
     .view__table .view tbody tr td .height {
@@ -313,38 +350,11 @@
         line-height: 46px;
         margin: 0;
     }
-    .view__table .view .view__thBox{
-        display: none;
-    }
-    .view__table .view .view__thMobileBox {
-        display: block;
-        padding: 0 10px;
-        margin: 25px 0;
-    }
-    .view__table .view .view__thMobileBox > p {
-        line-height: 1.6;
-        font-weight: 500;
-        word-break: keep-all;
-    }
     .review__board .review__table thead tr th {
         font-size: 16px;
     }
     .review__board .review__table tbody tr td {
         font-size: 15px;
-    }
-    .view__table .view .view__thMobileBox .thMobile__BT {
-        display: flex;
-        justify-content: center;
-        font-size: 13px;
-        font-weight: 400;
-        margin-top: 10px;
-        color: #b0b0b0;
-    }
-    .view__table .view .view__thMobileBox .thMobile__BT > p:nth-child(2) {
-        margin-left: 20px;
-    }
-    .view__table .view colgroup col:nth-child(1) {
-        width: 100% !important;
     }
 
     .comment__inner .commentBox {
