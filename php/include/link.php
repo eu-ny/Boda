@@ -26,5 +26,6 @@
 <meta name="robots" content="all" />
 <!-- //SEO -->
 
-<!-- icon -->
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="../assets/ico/256.png">
 <!-- //icon -->

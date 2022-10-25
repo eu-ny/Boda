@@ -2,13 +2,25 @@
     include "../connect/connect.php";
     include "../connect/session.php";
     include "../connect/sessionCheck.php";
+
+    // $myReviewID = $_GET['myReviewID'];
+    // $ReviewSql = "SELECT * FROM myReview WHERE myReview = {$myReviewID}";
+    // $ReviewResult = $connect -> query($ReviewSql);
+    // $ReviewInfo = $ReviewResult -> fetch_array(MYSQLI_ASSOC);
+    // $ReviewCommentSql = "SELECT * FROM myReviewComment WHERE myReviewID = {$myReviewID} ORDER BY myReviewCommentID DESC";
+    // $ReviewCommentResult = $connect -> query($ReviewCommentSql);
+    // $ReviewCommentInfo = $ReviewResult -> fetch_array(MYSQLI_ASSOC);
+    // echo $ReviewCommentInfo;
 ?>
 
 <!DOCTYPE html>
 <html lang="ko">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS -->
-        <?php include "../include/link.php" ?>
+        <?php include "../include/linkreviewview.php" ?>
         <title>REVIEW VIEW</title>
     </head>
     <body>
@@ -18,6 +30,7 @@
             <a href="#footer">푸터 영역 바로가기</a>
         </div>
         <?php include "../include/header.php" ?>
+        <?php include "../login/login.php" ?>
         <!-- //header -->
     
         <main id="main">
@@ -52,7 +65,7 @@
     $sql = "UPDATE myReview set ReviewView = ReviewView + 1 WHERE myReviewID = {$myReviewID}";
     $connect -> query($sql);
     
-    $sql = "SELECT r.ReviewTitle, m.youNickName, r.ReviewregTime, r.ReviewView, r.ReviewContents, r.ReviewLike FROM myReview r JOIN myMember m ON(r.myMemberID = m.myMemberID) WHERE r.myReviewID = {$myReviewID}";
+    $sql = "SELECT r.ReviewTitle, m.myMemberID, m.youNickName, r.ReviewregTime, r.ReviewView, r.ReviewImgFile, r.ReviewContents, r.ReviewLike FROM myReview r JOIN myMember m ON(r.myMemberID = m.myMemberID) WHERE r.myReviewID = {$myReviewID}";
     $result = $connect -> query($sql);
 
     if($result){
@@ -61,7 +74,8 @@
         echo "<thead><tr><th>".$info['youNickName']."</th>";
         echo "<th>".$info['ReviewTitle']."</th>";
         echo "<th>".date('Y-m-d H:i', $info['ReviewregTime'])."</th></tr></thead>";
-        echo "<tbody><tr><td colspan='3'><div class='height'>".$info['ReviewContents']."</td></tr></tr></tbody>";
+        echo "<tbody><tr><td colspan='3'><div class='height'><figure class='viewImg'><img src='../assets/img/Review/".$info['ReviewImgFile']."'></figure>";
+        echo "<div class='view__desc'><p>".$info['ReviewContents']."</p></div></td></tr></tr></tbody>";
     }
 ?>
                         </table>
@@ -85,44 +99,33 @@
                                     </span>
                                     <span class="ir">조회수</span>
                                 </div>
-                                <div class="heart">
-                                    <svg
-                                        width="18"
-                                        height="17"
-                                        viewBox="0 0 18 17"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M9 16.515L7.695 15.327C3.06 11.124 0 8.352 0 4.95C0 2.178 2.178 0 4.95 0C6.516 0 8.019 0.729 9 1.881C9.981 0.729 11.484 0 13.05 0C15.822 0 18 2.178 18 4.95C18 8.352 14.94 11.124 10.305 15.336L9 16.515Z"
-                                            fill="#323232"
-                                        />
-                                    </svg>
-                                    <span>
-                                        <? echo $info['ReviewLike']; ?>
-                                    </span>
-                                    <span class="ir">추천수</span>
-                                </div>
                             </div>
                             <div class="btn">
-                                <a href="ReviewModify.php?myReviewID=<?=$myReviewID?>">수정</a>
-                                <a href="ReviewRemove.php?myReviewID=<?=$myReviewID?>" onclick="alert('정말로 삭제할까요...?')">삭제</a>
-                                <a href="Review.php">목록</a>
+                        <?php if($_SESSION['myMemberID'] == $info['myMemberID']){ ?>
+                                <a href='ReviewModify.php?myReviewID=<?=$myReviewID?>'>수정</a>
+                                <a href='ReviewRemove.php?myReviewID=<?=$myReviewID?>' onclick="alert('정말로 삭제할까요?')">삭제</a>
+                                <a href='Review.php'>목록</a>
+                            <? } else { ?>
+                                <a href='Review.php'>목록</a>
+                        <?    }
+                        ?>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="bestcomments">
-                    <form action="" name="" method="">
+                    <form action="ReviewCommentWrite.php" name="ReviewComments" method="post">
                         <fieldset>
                             <legend>댓글 작성 영역</legend>
                             <div>
-                                <label for="bestcomments">내용</label>
+                                <label for="ReviewComments">내용</label>
                                 <input
-                                    name="bestcomments"
-                                    id="bestcomments"
-                                    placeholder="댓글을 입력해 보세요.">
-                                <button type="submit" class="btn">등록</button>
+                                    type="text"
+                                    name="ReviewComments"
+                                    id="ReviewComments"
+                                    placeholder="댓글을 입력해 보세요."
+                                    required>
+                                <button type="submit" class="btn" id="ReviewCommentWrite">등록</button>
                             </div>
                         </fieldset>
                     </form>
@@ -134,8 +137,8 @@
                                 <div class="contents__top">
                                     <p class="name"><span class="ir">작성자</span><span>댕댕이</span></p>
                                     <p class="date"><span class="ir">작성일</span><span>| 2022-09-18</span></p>
-                                    <a href="#" class="modify">| 수정</a>
-                                    <a href="#" class="remove">| 삭제</a>
+                                    <button class="modify">| 수정</button>
+                                    <button class="remove">| 삭제</button>
                                 </div>
                                 <div class="contents__bottom">
                                     <span>삼대가 망하시길 바랍니다.</span>
@@ -166,5 +169,12 @@
         <!-- //footer -->
 
         <?php include "../include/script.php" ?>
+        <script>
+            let ViewImg = document.querySelector(".viewBoard .board__table table tbody .height img");
+            let ViewImgsrc = ViewImg.getAttribute("src");
+            if(ViewImgsrc == "../assets/img/Review/Img_default.jpg"){
+                ViewImg.style.display = "none";
+            }
+        </script>
     </body>
 </html>
