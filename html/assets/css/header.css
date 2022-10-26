@@ -207,6 +207,9 @@
     .header__logo {
         font-size: 18px;
     }
+    .header__container {
+        border-bottom: 1px solid #efefef;
+    }
     .header__container::after {
         height: 0;
     }
@@ -237,11 +240,11 @@
 
     .mobilemenu {
         position: fixed;
-        top: 68px;
+        top: 71px;
         width: 100%;
         box-sizing: border-box;
         background-color: #fff;
-        padding: 200px 60px 100px;
+        padding: 20px 60px 100px;
         font-size: 20px;
         font-weight: 300;
         text-align: right;
