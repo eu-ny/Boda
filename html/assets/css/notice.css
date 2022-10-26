@@ -208,6 +208,10 @@
     font-weight: 200;
     font-size: 16px;
 }
+.notice__btn .notice_Del {
+    margin: 0 20px;
+}
+.notice__btn .notice_Mod {}
 
 
 /* 미디어쿼리 */
