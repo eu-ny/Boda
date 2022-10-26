@@ -29,7 +29,7 @@ include '../connect/session.php';
     <div class="notice__header top__container">
         <h2>NOTICE</h2>
         <div class="home">
-            <a href="../main/main.php"><span class="home_icon"></span></a>
+            <a class="home_iconBox" href="../main/main.php"><span class="home_icon"></span></a>
             <span>NOTICE</span>
         </div>
         <div class="menu">
@@ -110,7 +110,8 @@ if ($result) {
     $count = $result->num_rows;
     if ($count > 0) {
         for ($i = 1; $i <= $count; $i++) {
-            $info = $result->fetch_array(MYSQLI_ASSOC); // 제목
+            $info = $result->fetch_array(MYSQLI_ASSOC);
+            // 제목
             echo '<tr>';
             echo '<td>' . $info['myNoticeID'] . '</td>';
             echo '<td>' . $info['NoticeTitle'] . '</td>';
@@ -118,7 +119,8 @@ if ($result) {
                 date('Y-m-d', $info['NoticeregTime']) .
                 '</td>';
             echo "<td><svg class='open' width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L8 8L15 1' stroke='#888888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg><svg class='close blind' width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 8L8 0.999999L1 8' stroke='#888888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></td>";
-            echo '</tr>'; // 내용
+            echo '</tr>';
+            // 내용
             echo '<tr>';
             echo "<td colspan='4' class='content blind'><img src=../assets/img/Notice/" .
                 $info['NoticeImgFile'] .
@@ -545,8 +547,7 @@ for ($i = $startPage; $i <= $endPage; $i++) {
         $active = 'active';
     }
     echo "<li ><a class='{$active}' href='notice.php?page={$i}'>{$i}</a></li>";
-}
-// 다음 페이지, 마지막 페이지 이동
+} // 다음 페이지, 마지막 페이지 이동
 if ($page != $endPage) {
     $nextPage = $page + 1;
     echo "<li><a href='notice.php?page={$nextPage}'><svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>

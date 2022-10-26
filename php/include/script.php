@@ -1,7 +1,7 @@
 <!-- script -->
 <script src="../assets/js/headermenu.js"></script>
 <script src="../assets/js/loginpopup.js"></script>
-<script src="../assets/js/review.js"></script>
+<script src="../assets/js/notice.js"></script>
 <script src="../assets/js/swiper.js"></script>
 <script src="../assets/js/slider.js"></script>
 <script src="../assets/js/agree.js"></script>

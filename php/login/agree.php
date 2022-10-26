@@ -90,9 +90,7 @@
     <?php include '../include/footer.php'; ?>
     <!-- //footer -->
 
-    <script src="../../html/assets/js/headermenu.js"></script>
-    <script src="../../html/assets/js/loginpopup.js"></script>
-    <script src="../../html/assets/js/agree.js"></script>
+    <?php include '../include/script.php'; ?>
     <!-- //script -->
 </body>
 
