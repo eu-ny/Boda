@@ -28,11 +28,9 @@ include '../connect/session.php';
                 <h2>TODAY's</h2>
                 <h2>Review</h2>
                 <div class="home">
-                <span><a href="#">
-                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 17V11H12V17H17V9H20L10 0L0 9H3V17H8Z" fill="#323232"/>
-                    </svg>
-                    </a></span><span>REVIEW</span></div>
+                    <a href="../main/main.php"><span class="home_icon"></span></a>
+                    <span>REVIEW</span>
+                </div>
                 <div class="menu">
                     <li><a href="Review.php" class="active">REVIEW</a></li>
                     <li><a href="Talk.php">Talk</a></li>
@@ -55,6 +53,7 @@ include '../connect/session.php';
                                     id="searchKeyword"
                                     placeholder="검색어를 입력하세요."
                                     aria-label="search"
+                                    class="reviewInput"
                                     required
                                 />
                                 <button type="submit" class="searchBtn">
@@ -228,6 +227,7 @@ if ($page != $endPage) {
                     </ul>
                 </div>
             </section>
+            <div class="topBtn ir">top</div>
         </main>
 
         <?php include '../include/footer.php'; ?>

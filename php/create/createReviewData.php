@@ -1,8 +1,11 @@
 <?php
-    include "../connect/connect.php";
+include '../connect/connect.php';
+include '../connect/session.php';
 
-    for($i=1; $i<=500; $i++){
-        $sql = "INSERT INTO myReview(myMemberID, myReviewID, ReviewTitle, ReviewContents, ReviewView, regTime) VALUES('1', '${i}', '게시판 제목${i}입니다.', '게시판 콘텐츠${i}입니다.', '1', 'regTime')";
-        $connect -> query($sql);
-    }
+for ($i = 1; $i <= 100; $i++) {
+    $regTime = time();
+    $sql = "INSERT INTO myReview(myMemberID, ReviewTitle, ReviewContents, ReviewView, ReviewregTime)
+        VALUES('29', '나는 웹쓰다', '나는 웹쓰다', '1', 'regTime')";
+    $connect->query($sql);
+}
 ?>

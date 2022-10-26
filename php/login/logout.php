@@ -1,11 +1,11 @@
 <?php
-    include "../connect/session.php";
+include '../connect/session.php';
 
-    unset($_SESSION['myMemberID']);
-    unset($_SESSION['youID']);
-    unset($_SESSION['youName']);
+unset($_SESSION['myMemberID']);
+unset($_SESSION['youID']);
+unset($_SESSION['youNickName']);
 ?>
 
 <script>
-    location.href="../main/main.php";
+    history.back();
 </script>

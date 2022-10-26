@@ -2,10 +2,12 @@
 <html lang="ko">
 
 <head>
-    <title>회원가입 정보 입력 페이지</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <?php include "../include/link.php" ?>
+    <?php include '../include/link.php'; ?>
+    <title>회원가입 정보 입력 페이지</title>
 </head>
 
 <body>
@@ -15,7 +17,8 @@
         <a href="#footer">푸터 영역 바로가기</a>
     </div>
 
-    <?php include "../include/header.php" ?>
+    <?php include '../include/header.php'; ?>
+    <?php include '../login/login.php'; ?>
     
     <main id="infoType" class="info__wrap agree">
         <h2 class="agree_tit">SIGN UP</h2>
@@ -95,7 +98,7 @@
     </main>
     <!-- //main -->
 
-    <?php include "../include/footer.php" ?>
+    <?php include '../include/footer.php'; ?>
     <!-- //footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

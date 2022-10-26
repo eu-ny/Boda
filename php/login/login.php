@@ -4,7 +4,7 @@
         <div class="login__header">
             <h2 class="popup__title">LOGIN</h2>
             <button type="button" class="popup__close"><span class="blind">닫기</span></button>
-        </div> 
+        </div>  
         <div class="login__inner">
             <form action="../login/loginSave.php" name="login" class="loginForm" method="post">
                 <fieldset>
@@ -24,7 +24,7 @@
                 <div class="join__btn">
                     <a href="../login/agree.php">회원가입</a>
                     <a href="../login/findID.php">아이디 찾기</a>
-                    <a href="#">비밀번호 찾기</a>
+                    <a href="../login/findPass.php">비밀번호 찾기</a>
                 </div>
             </div>
         </div>

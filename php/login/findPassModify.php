@@ -9,7 +9,7 @@ include '../connect/session.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 완료 페이지</title>
+    <title>비밀번호 찾기 페이지</title>
     
     <!-- CSS -->
     <?php include '../include/link.php'; ?>
@@ -31,38 +31,17 @@ include '../connect/session.php';
             <div class="modal">
                 <div class="bg"></div>
                 <div class="modalBox">
-                    <h2>LOGIN</h2>
+                    <h2>계정 찾기</h2>
+                    <p>비밀번호가 성공적으로 변경되었습니다.<br>
+                        새로운 비밀번호로 로그인해 주세요.</p>
 <?php
-$youID = $_POST['userID'];
-$youPass = $_POST['userPass'];
+$youPass = $_POST['youPass'];
+$youID = $_SESSION['youID'];
 
-function msg($alert)
-{
-    echo "<p>{$alert}</p>";
-}
-
-$sql = "SELECT myMemberID, youID, youNickName, youPass FROM myMember WHERE youID = '$youID' AND youPass = '$youPass'";
+$sql = "UPDATE myMember SET youPass = '$youPass' WHERE youID = '$youID'";
 $result = $connect->query($sql);
-if ($result) {
-    $count = $result->num_rows;
-    if ($count == 0) {
-        msg('아이디 또는 비밀번호가 틀렸습니다.');
-    } else {
-        $info = $result->fetch_array(MYSQLI_ASSOC);
-        $_SESSION['myMemberID'] = $info['myMemberID'];
-        $_SESSION['youID'] = $info['youID'];
-        $_SESSION['youNickName'] = $info['youNickName'];
-        // echo "<pre>";
-        // var_dump($info);
-        // echo "</pre>";
-        // Header("Location: ../main/main.php");
-        // Header("Location: ../main/main.php");
-        echo "<script>location.href='../main/main.php'</script>";
-    }
-} else {
-    msg('에러발생01 - 관리자에게 문의하세요.');
-}
 ?>
+                    <a href="../main/main.php" class="btn1">메인으로</a>
                 </div>
             </div>
         </div>

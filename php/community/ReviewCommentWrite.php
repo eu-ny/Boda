@@ -3,21 +3,17 @@ include '../connect/connect.php';
 include '../connect/session.php';
 include '../connect/sessionCheck.php';
 
-$ReviewComment = $_POST['ReviewComments'];
-$ReviewComment = $connect->real_escape_string($ReviewComment);
-
-$ReviewCommentregTime = time();
 $myMemberID = $_SESSION['myMemberID'];
 $youNickName = $_SESSION['youNickName'];
 
-echo $youNickName;
-echo $myMemberID;
-echo $ReviewCommentregTime;
-echo $ReviewComment;
+// 받아올 값(POST 방식)
+$myReviewID = $_POST['ReviewID'];
+$ReviewComment = $_POST['ReviewComment'];
+$regTime = time();
+$sql = "INSERT INTO myReviewComment (myMemberID, myReviewID, youNickName, ReviewComment, ReviewCommentregTime)
+        VALUES ('$myMemberID', '$myReviewID', '$youNickName', '$ReviewComment', '$regTime')";
 
-$sql = "INSERT INTO myReviewComment(myMemberID, youNickName, ReviewComment, ReviewCommentregTime)
-    VALUES('$myMemberID', '$youNickName', '$ReviewComment', '$ReviewCommentregTime')";
-$connect->query($sql);
-
-echo $sql;
+// 데이터 가져옴
+$result = $connect->query($sql);
+// echo json_encode(array("info" => $myReviewID));
 ?>

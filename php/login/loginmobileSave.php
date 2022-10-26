@@ -60,7 +60,7 @@ if ($result) {
         echo "<script>location.href='../main/main.php'</script>";
     }
 } else {
-    msg('에러발생01 - 관리자에게 문의하세요.');
+    msg('에러발생 - 관리자에게 문의하세요.');
 }
 ?>
                 </div>
@@ -70,7 +70,6 @@ if ($result) {
     <!-- //main -->
     <?php include '../include/footer.php'; ?>
     <!-- //footer -->
-    <?php include '../include/script.php'; ?>
 </body>
 
 </html>

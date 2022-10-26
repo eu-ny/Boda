@@ -1,35 +1,35 @@
 <?php
-    include "../connect/connect.php";
+include '../connect/connect.php';
 
-    // 변수 설정
-    $type = $_POST['type'];
+// 변수 설정
+$type = $_POST['type'];
 
-    // 쿼리문 생성
-    // $sql = "SELECT youEmail, youNickName FROM myAdminMember WHERE youEmail = '{$youEmail}'";
-    // $sql = "SELECT youEmail, youNickName FROM myAdminMember WHERE youNickName = '{$youNickName}'";
+// 쿼리문 생성
+// $sql = "SELECT youEmail, youNickName FROM myAdminMember WHERE youEmail = '{$youEmail}'";
+// $sql = "SELECT youEmail, youNickName FROM myAdminMember WHERE youNickName = '{$youNickName}'";
 
-    $sql = "SELECT youID, youEmail, youNickName FROM myMember ";
-    
-    if($type == "IDCheck"){
-        $youID = $connect -> real_escape_string(trim($_POST['youID']));
-        $sql .= "WHERE youID = '{$youID}'";
-    }
-    if($type == "nickCheck"){
-        $youNickName = $connect -> real_escape_string(trim($_POST['youNickName']));
-        $sql .= "WHERE youNickName = '{$youNickName}'";
-    }
-    if($type == "emailCheck"){
-        $youEmail = $connect -> real_escape_string(trim($_POST['youEmail']));
-        $sql .= "WHERE youEmail = '{$youEmail}'";
-    }
+$sql = 'SELECT youID, youEmail, youNickName FROM myMember ';
 
-    $result = $connect -> query($sql);
-    $jsonResult = "bad";
+if ($type == 'IDCheck') {
+    $youID = $connect->real_escape_string(trim($_POST['youID']));
+    $sql .= "WHERE youID = '{$youID}'";
+}
+if ($type == 'nickCheck') {
+    $youNickName = $connect->real_escape_string(trim($_POST['youNickName']));
+    $sql .= "WHERE youNickName = '{$youNickName}'";
+}
+if ($type == 'emailCheck') {
+    $youEmail = $connect->real_escape_string(trim($_POST['youEmail']));
+    $sql .= "WHERE youEmail = '{$youEmail}'";
+}
 
-    // 데이터 유무 확인
-    if($result -> num_rows == 0){
-        $jsonResult = "good";
-    }
+$result = $connect->query($sql);
+$jsonResult = 'bad';
 
-    echo json_encode(array("result" => $jsonResult));
+// 데이터 유무 확인
+if ($result->num_rows == 0) {
+    $jsonResult = 'good';
+}
+
+echo json_encode(['result' => $jsonResult]);
 ?>
