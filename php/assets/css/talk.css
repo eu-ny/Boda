@@ -1,0 +1,183 @@
+/* talk__write */
+.talk__write fieldset textarea {
+    resize: none;
+    font-family: 'scoredream';
+    font-size: 16px;
+    color: #666666;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #efefef;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.talk__write fieldset .btn {
+    width: 107px;
+    height: 50px;
+    color: white;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 15px;
+    float: right;
+    font-weight: 300;
+    font-family: 'scoredream';
+    font-size: 16px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+/* board */
+.talk__table {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    font-family: "scoredream";
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 80px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.comment {
+    /* border-bottom: 1px dashed #D0D0D0; */
+    box-sizing: border-box;
+    padding: 45px 30px;
+}
+.comment .profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+    float: left;
+}
+.comment .contents {
+    float: left;
+    width: 90%;
+}
+.comment .contents .contents__top {
+    display: flex;
+    margin: 5px 0;
+}
+.comment .contents .contents__top .name{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+.comment .contents .contents__top .date {
+    font-weight: 300;
+    font-size: 16px;
+    color: #b0b0b0;
+    padding: 0 5px;
+}
+.comment .contents .contents__top .modify {
+    font-weight: 300;
+    font-size: 16px;
+    color: #b0b0b0;
+    padding: 0 5px 0 0;
+}
+.comment .contents .contents__top .remove {
+    font-weight: 300;
+    font-size: 16px;
+    color: #b0b0b0;
+}
+.comment .contents .contents__bottom {
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+}
+.comment_1 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_2 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_3 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_4 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_5 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_6 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_7 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_8 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_9 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment_10 .profile{
+    background-image: url(https://github.com/mj0614k/Coding/blob/main/assets/img/tistory.jpg?raw=true);
+}
+.comment .heart {
+    float: right;
+}
+.comment .heart p {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+.talk__board .talk__table tbody tr {
+    transition: all 0.3s ease-in-out;
+}
+.talk__board .talk__table tbody tr:hover {
+    background-color: #f5f5f5;
+
+}
+.talk__board .talk__table tbody tr td:nth-child(2) {
+    text-align: left;
+}
+.talk__board .talk__table tbody tr td {
+    border-bottom: 1px dashed #e6e6e6;
+    font-size: 16px;
+    color: #000;
+}
+.talk__board .talk__table tbody tr td a {
+    color: #000;
+}
+
+
+
+
+/* blind */
+fieldset #talkContents:focus {
+    outline: none;
+}
+
+
+/* 미디어쿼리 */
+@media (max-width:800px) {
+    .main__header h2:nth-child(2) {
+        margin-bottom: 80px;
+    }
+
+    .main__header .home {
+        display: none;
+    }
+
+    .comment .profile {
+        margin-bottom: 10px;
+    }
+    .comment .contents .contents__top {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 600px){
+    .main__header .menu li:nth-child(1) a {
+        max-width: 120px;
+    }
+}
