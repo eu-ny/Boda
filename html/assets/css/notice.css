@@ -208,10 +208,16 @@
     font-weight: 200;
     font-size: 16px;
 }
-.notice__btn .notice_Del {
-    margin: 0 20px;
+.notice_Del {
+    float: right;
+    margin: 10px 0;
+    background: transparent;
+    cursor: pointer;
 }
-.notice__btn .notice_Mod {}
+.notice_Mod {
+    background: transparent;
+    cursor: pointer;
+}
 
 
 /* 미디어쿼리 */
