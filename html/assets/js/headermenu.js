@@ -55,3 +55,5 @@ MBHamClose.addEventListener("click", () => {
 //search
 // const searchBtn = document.querySelector(".header__right .search");
 // let i = 0;
+
+
