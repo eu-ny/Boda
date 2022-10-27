@@ -138,7 +138,7 @@
 .notice__table thead tr th {
     font-weight: 400;
     height: 54px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .notice__table tbody tr:hover {
     background-color: #f5f5f5;
@@ -169,7 +169,7 @@
     font-weight: 500;
     line-height: 1.6;
     box-sizing: border-box;
-    padding: 40px 100px;
+    padding: 40px 100px 30px;
     font-size: 16px;
     color: #000;
     transition: all 0.6s cubic-bezier(0.29, 1.05, 0.78, 1.02);
@@ -208,15 +208,17 @@
     font-weight: 200;
     font-size: 16px;
 }
-.notice_Del {
+.notice_Del, .notice_Mod {
     float: right;
-    margin: 10px 0;
+    margin: 20px 0;
     background: transparent;
     cursor: pointer;
+    color: #666;
 }
-.notice_Mod {
-    background: transparent;
-    cursor: pointer;
+.notice_Del {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #b0b0b0;
 }
 
 

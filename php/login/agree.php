@@ -69,7 +69,7 @@
                     </div>
 
                 </article>
-                <div class="checkbox1">
+                <div class="checkbox1 Agree">
                     <input type='checkbox' id="check3" name='check_all'><label for="check3"></label>
                     <p class="checkbox_p">[필수] 만 14세 이상입니다.</p>
                 </div>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="btn_box">
                     <a href="#" class="Btn">메인으로</a>
-                    <a href="agreeInfo.php" class="Btn">다음</a>
+                    <button type="button" class="next_button" onclick="newPage()" disabled="disabled">확인</button>
                 </div>
             </form>
         </div>

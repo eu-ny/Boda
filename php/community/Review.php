@@ -29,8 +29,10 @@ include '../connect/session.php';
                 <h2>TODAY's</h2>
                 <h2>Review</h2>
                 <div class="home">
-                    <a href="../main/main.php"><span class="home_icon"></span></a>
-                    <span>REVIEW</span>
+                    <a class="home_iconBox" href="../main/main.php">
+                        <span class="home_icon"></span>
+                    </a>
+                    <span>Review</span>
                 </div>
                 <div class="menu">
                     <li><a href="Review.php" class="active">REVIEW</a></li>

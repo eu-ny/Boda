@@ -29,8 +29,10 @@ include '../connect/session.php';
     <div class="notice__header top__container">
         <h2>NOTICE</h2>
         <div class="home">
-            <a href="../main/main.php"><span class="home_icon"></span></a>
-            <span>NOTICE</span>
+            <a class="home_iconBox" href="../main/main.php">
+                <span class="home_icon"></span>
+            </a>
+            <span>FAQ</span>
         </div>
         <div class="menu">
             <li><a href="notice.php" class="active">NOTICE</a></li>
@@ -127,7 +129,8 @@ if ($result) {
     $count = $result->num_rows;
     if ($count > 0) {
         for ($i = 1; $i <= $count; $i++) {
-            $info = $result->fetch_array(MYSQLI_ASSOC); // 제목
+            $info = $result->fetch_array(MYSQLI_ASSOC);
+            // 제목
             echo '<tr>';
             echo '<td>' . $info['myNoticeID'] . '</td>';
             echo '<td>' . $info['NoticeTitle'] . '</td>';
@@ -135,7 +138,8 @@ if ($result) {
                 date('Y-m-d', $info['NoticeregTime']) .
                 '</td>';
             echo "<td><svg class='open' width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L8 8L15 1' stroke='#888888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg><svg class='close blind' width='16' height='9' viewBox='0 0 16 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M15 8L8 0.999999L1 8' stroke='#888888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></td>";
-            echo '</tr>'; // 내용
+            echo '</tr>';
+            // 내용
             echo '<tr>';
             echo "<td colspan='4' class='content blind'><img src=../assets/img/Notice/" .
                 $info['NoticeImgFile'] .
@@ -531,7 +535,8 @@ if ($result) {
         </div>
         <div class="board__pages">
             <ul>
-<?php // 총 페이지 개수
+<?php
+// 총 페이지 개수
 // 총 페이지 개수
 ?>
 $NoticeCount = ceil($totalCount / $viewNum);

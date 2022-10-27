@@ -193,12 +193,12 @@
             </div>
             <section class="mid__container">
                 <div class="talk__write">
-                    <form action="talkWriteSave.php" name="talkWrite" method="post">
+                    <form action="TalkWriteSave.php" name="TalkWrite" method="post">
                         <fieldset>
                             <legend class="blind">전시 토크 게시판 작성 영역</legend>
                             <div>
-                                <label for="talkContents" class="blind">내용</label>
-                                <textarea name="talkContents" id="talkContents" rows="7" placeholder="내용을 입력해 주세요."></textarea>
+                                <label for="TalkContents" class="blind">내용</label>
+                                <textarea name="TalkContents" id="TalkContents" rows="7" placeholder="내용을 입력해 주세요."></textarea>
                             </div>
                             <button type="submit" class="btn">글쓰기</button>
                         </fieldset>
@@ -209,19 +209,20 @@
                         <table class="talk__table">
                             <tbody>
                                 <tr>
-                                    <td class="comment comment_1">
+                                    <td class="comment">
                                         <div class="profile"></div>
                                         <div class="contents">
                                             <div class="contents__top">
                                                 <p class="name"><span class="ir">작성자</span><span>댕댕이</span></p>
                                                 <div class="contents__topBox">
-                                                    <p class="date"><span class="ir">작성일</span><span>| 2022-09-18</span></p>
-                                                    <a href="#" class="remove">| 삭제</a>
-                                                    <a href="#" class="remove">| 수정</a>
+                                                    <p class="date"><span class="ir">작성일</span>
+                                                    <span>| 2022-09-18</span></p>
+                                                    <a href="#" class="Talkmodify">| 삭제</a>
+                                                    <a href="#" class="Talkdelete">| 수정</a>
                                                 </div>  
                                             </div>
                                             <div class="contents__bottom">
-                                                <span>좋은 전시 추천 좀 해주세요~~~~ 데이트 하러 갑니다~</span>
+                                                좋은 전시 추천 좀 해주세요~~~~ 데이트 하러 갑니다~
                                             </div>
                                         </div>
                                         <!-- <div class="heart">

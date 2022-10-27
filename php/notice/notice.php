@@ -29,8 +29,10 @@ include '../connect/session.php';
     <div class="notice__header top__container">
         <h2>NOTICE</h2>
         <div class="home">
-            <a class="home_iconBox" href="../main/main.php"><span class="home_icon"></span></a>
-            <span>NOTICE</span>
+            <a class="home_iconBox" href="../main/main.php">
+                <span class="home_icon"></span>
+            </a>
+            <span>FAQ</span>
         </div>
         <div class="menu">
             <li><a href="notice.php" class="active">NOTICE</a></li>

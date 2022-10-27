@@ -25,6 +25,7 @@
     padding: 0 60px;
     text-align: center;
     position: relative;
+    border-bottom: 1px solid #efefef;
 }
 
 .header__logo {
@@ -121,7 +122,7 @@
 
 .header__right .smallmenu {
     position: absolute;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #efefef;
     background-color: #fff;
     box-sizing: border-box;
     right: 15px;
@@ -140,7 +141,7 @@
     display: block;
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: #666;
 }
 .header__right .smallmenu li:hover {
     text-decoration: underline;
@@ -167,7 +168,8 @@
         font-size: 1rem;
     }
     .header__menu .sub li a {
-        width: 130px;
+        width: 150px;
+        font-size: 1rem;
     }
     .header__area {
         padding: 0 30px;
@@ -176,7 +178,7 @@
         right: 0px;
     }
     .header__right .ham__close {
-        right: 38px;
+        right: 3px;
     }
     .header__right .search {
         right: 100px;
@@ -206,9 +208,6 @@
     }
     .header__logo {
         font-size: 18px;
-    }
-    .header__container {
-        border-bottom: 1px solid #efefef;
     }
     .header__container::after {
         height: 0;
@@ -240,7 +239,7 @@
 
     .mobilemenu {
         position: fixed;
-        top: 71px;
+        top: 70px;
         width: 100%;
         box-sizing: border-box;
         background-color: #fff;
@@ -290,7 +289,7 @@
     .mobilemenu li ul li a::before {
         content: "";
         width: calc(35%);
-        height: 1.5px;
+        height: 2px;
         background: #000;
         position: absolute;
         bottom: 0px;

@@ -130,33 +130,25 @@ input[id="check4"]:checked + label::after {
     color: #444;
 }
 
-.checkbox1 {
+.input__check {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
-
+.checkbox1 {
+    display: flex;
+}
 .checkbox2 {
     margin-bottom: 70px;
     display: flex;
     align-items: center;
 }
 
-.checkbox1 .checkbox_p,
+.input__check .checkbox_p,
 .checkbox2 .checkbox_p {
     font-size: 16px;
     color: #000;
     margin: 2px;
     font-weight: 400;
-}
-
-.button {
-    width: 400px;
-    height: auto;
-    max-width: 100%;
-    min-height: 50px;
-    font-weight: 500;
-    border-radius: 0;
 }
 
 .btn_box {
@@ -166,12 +158,31 @@ input[id="check4"]:checked + label::after {
     margin-bottom: 120px;
 }
 
+.next_button {
+    cursor: pointer;
+    width: 175px;
+    height: 72px;
+    font-size: 20px;
+}
+
+.next_button[type="button"]:disabled {
+    background: #d9d9d9;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+}
+
+.next_button[type="button"] {
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
 .btn_box .Btn {
     /* width: 17%; */
     /* padding: 15px 40px; */
     width: 175px;
     height: 72px;
-    background-color: #fff;
     border-radius: 10px;
     font-size: 20px;
     box-sizing: border-box;
@@ -180,11 +191,7 @@ input[id="check4"]:checked + label::after {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.Btn:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
 }
 
 /* infoType */
@@ -227,10 +234,10 @@ input[id="check4"]:checked + label::after {
 .inputbox > div {
     display: flex;
     align-items: center;
-    margin-right: 30px; 
+    margin-right: 30px;
 }
 
-#infoType .inputbox input[type=radio] {
+#infoType .inputbox input[type="radio"] {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -256,9 +263,6 @@ input[id="check4"]:checked + label::after {
     border: 1px solid #d9d9d9;
     font-weight: 300;
     border-radius: 10px;
-}
-
-#infoType .IDbox {
 }
 
 #infoType .IDbox input {
@@ -293,7 +297,6 @@ input[id="check4"]:checked + label::after {
     border-radius: 10px;
     border: 1px solid #d9d9d9;
     box-sizing: border-box;
-    /*박스에 튀어나온거 가려줌...*/
 }
 
 .btn1 {
@@ -313,7 +316,6 @@ input[id="check4"]:checked + label::after {
     padding-top: 40px;
     padding-bottom: 20px;
 }
-
 
 /* 완료 페이지 */
 .modalBox {
@@ -357,9 +359,9 @@ input[id="check4"]:checked + label::after {
     display: none;
 }
 
-@media (max-width:960px) {
+@media (max-width: 960px) {
     .agree {
-        padding: 0 20px
+        padding: 0 20px;
     }
     .Agree__inner {
         width: 90%;
@@ -371,9 +373,8 @@ input[id="check4"]:checked + label::after {
     .info__inner input {
         width: 50%;
     }
-
 }
-@media (max-width:600px) {
+@media (max-width: 600px) {
     .IDbox {
         flex-wrap: nowrap;
         display: block;
@@ -406,11 +407,11 @@ input[id="check4"]:checked + label::after {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .agree {
         padding: 0 10px;
     }
     /* .info__inner {
-        width: 90%;
-    } */
+            width: 90%;
+        } */
 }

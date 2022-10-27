@@ -27,10 +27,10 @@ include '../connect/sessionCheck.php';
             <h2>EXHIBITION</h2>
             <h2>Talk</h2>
             <div class="home">
-            <div class="home">
-                    <a href="../main/main.php"><span class="home_icon"></span></a>
-                    <span>TALK</span>
-                </div>
+                <a class="home_iconBox" href="../main/main.php">
+                    <span class="home_icon"></span>
+                </a>
+                <span>Talk</span>
             </div>
         </div>
         <section class="mid__container">
