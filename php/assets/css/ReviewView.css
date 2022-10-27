@@ -110,10 +110,10 @@
     margin-left: 15px;
     font-weight: 300;
     font-size: 16px;
-    transition: all 0.1s ease-in-out;
 }
 
 .view__bottom .view__btn a:hover {
+    transition: all 0.1s ease-in-out;
     background-color: #b0b0b0;
     color: #000;
     font-weight: 400;
@@ -179,7 +179,7 @@
 }
 
 .comment .contents .contents__top .name {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     color: #666;
     margin-right: 10px;
@@ -206,6 +206,7 @@
     font-weight: 300;
     font-size: 14px;
     color: #000;
+    line-height: 1.6;
 }
 
 .comment_1 .profile {
@@ -255,10 +256,6 @@
         width: 100%;
         transition: all 0.6s ease-in-out;
     }
-
-    /* .comment__wrap {
-        font-size: 14px;
-    } */
 }
 
 @media (max-width: 600px) {
@@ -330,9 +327,10 @@
     }
     .comment .contents .contents__top {
         display: block;
+        margin: 5px 0;
     }
     .comment .contents .contents__top .dateBox {
-        margin-bottom: 10px;
+        margin: 5px 0;
     }
     .comment .contents .contents__top .date,
     .comment .contents .contents__top .modify,
@@ -350,13 +348,6 @@
         line-height: 46px;
         margin: 0;
     }
-    .review__board .review__table thead tr th {
-        font-size: 16px;
-    }
-    .review__board .review__table tbody tr td {
-        font-size: 15px;
-    }
-
     .comment__inner .commentBox {
         display: block;
     }
@@ -368,6 +359,7 @@
         width: 100%;
     }
     .comment {
+        align-items: flex-start;
         justify-content: space-evenly;
     }
     .comment__inner .commentBox .btn {

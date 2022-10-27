@@ -196,7 +196,7 @@
         display: block;
     }
     .main__header h2:nth-child(2) {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
     .card:nth-child(2)::before {
         content: "BEST2";
@@ -374,7 +374,12 @@
     .review__search .reviewSearchBox #searchOption {
         margin-right: 5px;
     }
-
+    .review__board .review__table thead tr th {
+        font-size: 1rem;
+    }
+    .review__board .review__table tbody tr td {
+        font-size: 1rem;
+    }
     .swiper-button-next, .swiper-button-prev {
         display: none;
     }

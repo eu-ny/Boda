@@ -8,6 +8,15 @@
     z-index: 1000;
     transition: right 0.4s ease-in;
 }
+.header__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 0px 10px 10px 0px rgba(48, 49, 51, 6%); */
+    z-index: 1000;
+    transition: right 0.4s ease-in;
+}
 /* .header__container::after {
     content: "";
     width: 100%;
@@ -152,6 +161,10 @@
     right: -100%;
 }
 
+body.scroll {
+    overflow: hidden;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 1000px) {
     .header__menu .main__menu {
@@ -249,11 +262,12 @@
         text-align: right;
         z-index: 10;
         transition: right 0.4s ease-in;
-        height: 1000vh;
     }
 
     .mobilemenu.overlay {
         right: 0;
+        overflow-y: scroll;
+        height: 95vh;
     }
 
     .mobilemenu li a {
@@ -328,6 +342,10 @@
 @media (max-width: 600px) {
     .mobilemenu {
         padding: 20px 30px 100px;
+    }
+
+    .mobilemenu.overlay {
+        height: 90vh;
     }
 }
 

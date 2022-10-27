@@ -167,10 +167,20 @@
     }
 }
 @media (max-width:480px) {
+    .top__container {
+        padding-top: 120px;
+    }
     .main__header h2:nth-child(1) {
         font-size: 30px;
     }
     .main__header h2:nth-child(2) {
         font-size: 40px;
+    }
+    .main__header .menu li:nth-child(1) a,
+    .main__header .menu li:nth-child(2) a {
+        font-size: 1rem;
+    }
+    .main__header .menu {
+        margin-bottom: 50px;
     }
 }
