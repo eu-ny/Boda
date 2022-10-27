@@ -20,6 +20,7 @@
     position: relative;
     font-family: "scoredream";
     overflow: hidden;
+    box-shadow: 3px 2px 9px 0px rgb(0 0 0 / 10%);
 }
 
 .card .cardImgBox {

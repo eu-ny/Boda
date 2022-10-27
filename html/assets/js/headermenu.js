@@ -39,7 +39,8 @@ const MBHam = document.querySelector(".ham__mobile");
 const MBHamClose = document.querySelector(".ham__mobile__close");
 const MBmenu = document.querySelector(".mobilemenu");
 const headerArea = document.querySelector(".header__area");
-const bodyScroll = document.querySelector("body")
+const bodyScroll = document.querySelector("body");
+
 MBHam.addEventListener("click", () => {
     MBHam.classList.add("blind");
     MBHamClose.classList.remove("blind");
@@ -47,6 +48,7 @@ MBHam.addEventListener("click", () => {
     headerArea.classList.add("overlay");
     bodyScroll.classList.add("scroll");
 });
+
 MBHamClose.addEventListener("click", () => {
     MBHam.classList.remove("blind");
     MBHamClose.classList.add("blind");
