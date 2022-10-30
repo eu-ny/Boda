@@ -61,4 +61,34 @@ MBHamClose.addEventListener("click", () => {
 // const searchBtn = document.querySelector(".header__right .search");
 // let i = 0;
 
+//mainHeaderEffect Main header hover
+const header2 = document.querySelectorAll(".mainEffect .main__menu");
+const submenu2 = document.querySelector(".mainEffect .headerEffect .subMenu");
+
+// header2.addEventListener("mouseover", () => {
+//     submenu2.classList.remove("hide");
+// });
+// header2.addEventListener("mouseleave", () => {
+//     submenu2.classList.add("hide");
+// });
+
+header2.forEach((el) => {
+    el.addEventListener("mouseover", () => {
+        submenu2.classList.remove("hide");
+    });
+});
+
+header2.forEach((el) => {
+    el.addEventListener("mouseleave", () => {
+        submenu2.classList.add("hide");
+    });
+});
+
+submenu2.addEventListener("mouseover", () => {
+    submenu2.classList.remove("hide");
+});
+submenu2.addEventListener("mouseleave", () => {
+    submenu2.classList.add("hide");
+});
+
 
