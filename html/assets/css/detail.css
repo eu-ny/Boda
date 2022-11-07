@@ -1,0 +1,345 @@
+.detail__main__image {
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .detail__main__image::after {
+    width: 100%;
+    height: 900px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .detail__container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .detail__location {
+    margin-left: 80px;
+    margin-top: 320px;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .detail__title {
+    margin-left: 80px;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1.4;
+    margin-top: 15px;
+  }
+  .detail__date {
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  /* detail__header */
+  .detail__header {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 190px;
+  }
+  .detail__header h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    color: #000;
+  }
+  .detail__header .home {
+    position: absolute;
+    top: 10px;
+  }
+  .detail__header .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .detail__header .menu li:nth-child(1) a {
+    font-weight: 300;
+    padding: 3px 20px;
+    font-size: 18px;
+    position: relative;
+    color: #b0b0b0;
+    margin-right: 30px;
+  }
+  .detail__header .menu li:nth-child(1) a.active::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    width: 100px;
+    background-color: #000;
+    height: 2px;
+  }
+  .detail__header .menu li:nth-child(2) a {
+    color: #b0b0b0;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 3px 20px;
+    position: relative;
+    margin-right: 30px;
+  }
+  .detail__header .menu li:nth-child(2) a.active::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    width: 100px;
+    background-color: #000;
+    height: 2px;
+  }
+  .detail__header .menu li:nth-child(3) a {
+    color: #b0b0b0;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 3px 20px;
+    position: relative;
+    margin-right: 30px;
+  }
+  .detail__header .menu li:nth-child(3) a.active::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 5px;
+    width: 100px;
+    background-color: #000;
+    height: 2px;
+  }
+  .detail__header .menu li a.active {
+    color: #000;
+    font-weight: 500;
+  }
+  
+  /* detail__main */
+  .detail__exhibition__h2 {
+    font-family: "ChosunNm";
+    font-size: 40px;
+    color: #666;
+    position: relative;
+    margin-bottom: 120px;
+  }
+  .detail__exhibition__h2::after {
+    content: "";
+    height: 1px;
+    border-bottom: 1px dashed #d9d9d9;
+    position: absolute;
+    width: calc(100% - 210px);
+    top: 20px;
+    left: 200px;
+  }
+  .detail__exhibition__main {
+    max-width: 1160px;
+    margin: 0 auto 90px auto;
+  }
+  .detail__exhibition__h3 {
+    font-family: "SCoreDream";
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .detail__exhibition__p {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #666;
+    margin-bottom: 180px;
+  }
+  .detail__exhibition__img {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 100px 180px 100px;
+  }
+  .detail__exhibition__img figure {
+    width: 50%;
+  }
+  .detail__exhibition__img figure.left {
+    margin-right: 100px;
+  }
+  .detail__exhibition__img figure.right {
+    margin-left: 100px;
+  }
+  .detail__exhibition__desc {
+    width: 50%;
+  }
+  .detail__exhibition__desc h3 {
+    font-family: "SCoreDream";
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .detail__exhibition__desc p:nth-child(2) {
+    font-family: "NanumSquare";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+    color: #b0b0b0;
+  }
+  .detail__exhibition__desc p:nth-child(3) {
+    font-family: "NanumSquare";
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .detail__detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 180px;
+  }
+  .detail__detail__img {
+    width: 49%;
+  }
+  .detail__detail__desc {
+    width: 49%;
+    border: 1px solid #d9d9d9;
+    padding: 70px;
+    box-sizing: border-box;
+  }
+  .detail__detail__desc h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 45px;
+  }
+  .detail__detail__table {
+    width: 100%;
+  }
+  .detail__detail__table tr td {
+    padding: 10px;
+    border-bottom: 1px dashed #d9d9d9;
+    height: 60px;
+  }
+  .detail__detail__table tr td:nth-child(1) {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .detail__detail__table tr td:nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+    word-break: keep-all;
+  }
+  .detail__artist {
+    display: flex;
+    margin-bottom: 220px;
+    justify-content: space-around;
+    position: relative;
+  }
+  .detail__artistList figure {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+  }
+  .detail__artistList figure div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .detail__artistList figure .ViewMore__arrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 18L15 12L9 6' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+  .detail__artistList figure:hover::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+  }
+  .detail__artistList figure:hover div {
+    display: block;
+  }
+  .detail__artistList h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .detail__artistList p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #b0b0b0;
+  }
+  
+  .detail__artist__modal {
+    max-width: 1200px;
+    height: 600px;
+    display: none;
+    overflow-y: scroll;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 45px 25px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .detail__artist__modal__close {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 87px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='70' height='70' viewBox='0 0 70 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='35' cy='35' r='35' fill='%23323232'/%3E%3Cpath d='M22 50L48.9483 20M48.9483 50L22 20' stroke='%23F5F5F5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  }
+  
+  .detail__artist__modal__h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px 10px 10px 10px;
+    display: inline-block;
+  }
+  .detail__artist__modal__span {
+    color: #666666;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .detail__artist__modal__top {
+    border-bottom: 2px solid black;
+  }
+  .detail__artist__modal__bottom {
+    margin-top: 70px;
+  }
+  .detail__artist__modal__p {
+    margin-top: 50px;
+    column-count: 2;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* 원래는 480인가.. 그런데 일단 800으로... */
+  @media (max-width: 800px) {
+    .detail__header .home {
+      display: none;
+    }
+  }

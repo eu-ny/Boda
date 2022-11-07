@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/fonts.css" />
+        <link rel="stylesheet" href="../assets/css/reset.css" />
+        <link rel="stylesheet" href="../assets/css/common.css" />
+
+        <link rel="stylesheet" href="../assets/css/header.css" />
+        <link rel="stylesheet" href="../assets/css/login.css">
+        <link rel="stylesheet" href="../assets/css/loginPopup.css">
+        <link rel="stylesheet" href="../assets/css//agree.css">
+
+        <link rel="stylesheet" href="../assets/css/notice.css">
+        <link rel="stylesheet" href="../assets/css/Review.css">
+        <link rel="stylesheet" href="../assets/css/ReviewView.css">
+        <link rel="stylesheet" href="../assets/css/ReviewWrite.css">
+        <link rel="stylesheet" href="../assets/css/talk.css">
+        <link rel="stylesheet" href="../assets/css/detail.css">
+
+        <link rel="stylesheet" href="../assets/css/footer.css">
+
+        <link rel="stylesheet" href="../assets/css/swiper.css">
+        <!-- //CSS -->
+
+        <title>전시 정보 페이지</title>
+    </head>
+    <body>
+        <!-- skip -->
+        <div id="skip">
+            <a href="#header">헤더 영역 바로가기</a>
+            <a href="#main">콘텐츠 영역 바로가기</a>
+            <a href="#footer">푸터 영역 바로가기</a>
+        </div>
+        <!-- //skip -->
+
+        <!-- header -->
+        <header id="header" class="header__container">
+            <div class="header__area">
+                <div class="header__logo">
+                    <a href="../main/main.html">BODA</a>
+                </div>
+                <div class="hM">
+                    <div class="header__menu">
+                        <ul>
+                            <li>
+                                <a class="main__menu" href="#">EXHIBITION</a>
+                                <ul class="sub blind">
+                                    <li><a href="#">현재전시</a></li>
+                                    <li><a href="#">예정전시</a></li>
+                                    <li><a href="#">추천전시</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="main__menu" href="#">SEARCH</a>
+                                <ul class="sub blind">
+                                    <li><a href="#">키워드별 검색</a></li>
+                                    <li><a href="#">직접 검색</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="main__menu" href="../community/Review.html">COMMUNITY</a>
+                                <ul class="sub blind">
+                                    <li><a href="../community/Review.html">REVIEW</a></li>
+                                    <li><a href="../community/Talk.html">TALK</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a class="main__menu" href="#">ABOUT</a>
+                                <ul class="sub blind">
+                                    <li><a href="#">ABOUT BODA</a></li>
+                                    <li><a href="#">CONTACT US</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <a class="search" href="#">
+                        <svg width="22" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.7261 18.239H19.4162L18.952 17.7913C20.5769 15.9011 21.5552 13.4471 21.5552 10.7776C21.5552 4.82504 16.7301 0 10.7776 0C4.82504 0 0 4.82504 0 10.7776C0 16.7301 4.82504 21.5552 10.7776 21.5552C13.4471 21.5552 15.9011 20.5769 17.7913 18.952L18.239 19.4162V20.7261L25.391 27.8638C25.7937 28.2658 25.9951 28.4667 26.2279 28.5402C26.424 28.602 26.6345 28.6019 26.8306 28.5399C27.0633 28.4662 27.2644 28.265 27.6667 27.8627L27.8627 27.6667C28.265 27.2644 28.4662 27.0633 28.5399 26.8306C28.6019 26.6345 28.602 26.424 28.5402 26.2279C28.4667 25.9951 28.2658 25.7937 27.8638 25.391L20.7261 18.239ZM10.7776 18.239C6.64894 18.239 3.31618 14.9062 3.31618 10.7776C3.31618 6.64894 6.64894 3.31618 10.7776 3.31618C14.9062 3.31618 18.239 6.64894 18.239 10.7776C18.239 14.9062 14.9062 18.239 10.7776 18.239Z" fill="#323232" />                    
+                        </svg>
+                    </a>
+                    <svg class="ham" width="35" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d ="M6.25 5.94922H33.75M6.25 15.8979H33.7 8M6.25 25.8467H33.75"stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+        
+                    <svg class="ham__close blind" width="20" height="23" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 31L27.9483 1M27.9483 31L1 1" stroke="#323232" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+        
+                    <svg class="ham__mobile" width="35" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d ="M6.25 5.94922H33.75M6.25 15.8979H33.7 8M6.25 25.8467H33.75"stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+        
+                    <svg class="ham__mobile__close blind" width="20" height="23" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 31L27.9483 1M27.9483 31L1 1" stroke="#323232" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+        
+                    <div class="smallmenu blind">
+                        <li><a href="#" id="login__btn">LOGIN</a></li>
+                        <li><a href="../login/agree.html">SIGN UP</a></li>
+                        <li><a href="#">MYPAGE</a></li>
+                        <li><a href="../notice/notice.html">NOTICE</a></li>
+                    </div>
+                    <div class="mobilemenu">
+                        <li>
+                            <a href="#">EXHIBITION</a>
+                            <ul>
+                                <li><a href="#">현재전시</a></li>
+                                <li><a href="#">예정전시</a></li>
+                                <li><a href="#">추천전시</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SEARCH</a>
+                            <ul>
+                                <li><a href="#">키워드별 검색</a></li>
+                                <li><a href="#">직접 검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="main__menu" href="../community/Review.html">COMMUNITY</a>
+                            <ul>
+                                <li><a href="../community/Review.html">REVIEW</a></li>
+                                <li><a href="../community/Talk.html">TALK</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ABOUT</a>
+                            <ul>
+                                <li><a href="#">ABOUT BODA</a></li>
+                                <li><a href="#">CONTACT US</a></li></li>
+                            </ul>
+                        </li>
+                        <ul class="small">
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="../login/agree.html">SIGN UP</a></li>
+                            <li><a href="#">MYPAGE</a></li>
+                            <li><a href="../notice/notice.html">NOTICE</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- login popup -->
+            <div id="loginPopup" class="login__popup open blind">
+                <div class="login__wrap">
+                    <div class="login__header">
+                        <h2 class="popup__title">LOGIN</h2>
+                        <button type="button" class="popup__close"><span class="blind">닫기</span></button>
+                    </div>
+                    <div class="login__inner">
+                        <form action="loginSave.php" name="login" class="loginForm" method="post">
+                            <fieldset>
+                                <legend class="blind">로그인 작성 란</legend>
+                                <div class="ID">
+                                    <label for="youID" class="blind">아이디</label>
+                                    <input type="text" class="userID" name="youID" placeholder="아이디" id="youID" maxlength="20" required>
+                                </div>
+                                <div class="pass">
+                                    <label for="youPass" class="blind">패스워드</label>
+                                    <input type="password" class="userPass" name="youPass" placeholder="비밀번호" id="youPass" required>
+                                </div>
+                                <button type="submit" class="login-btn">로그인</button>
+                            </fieldset>
+                        </form>
+                        <div class="login__footer">
+                            <div class="join__btn">
+                                <a href="../login/agree.html">회원가입</a>
+                                <a href="../login/findID.html">아이디 찾기</a>
+                                <a href="../login/findPass.html">비밀번호 찾기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //login popup -->
+        </header>
+        <!-- //header -->
+
+        <main id="main">
+            <h2 class="blind">전시 정보 상세 페이지입니다.</h2>
+            <div class="detail__main__image" style="background-image: url(../assets/img/detail_bg01.jpg)">
+                <div class="detail__container">
+                    <p class="detail__location">아마따 뮤지엄</p>
+                    <h2 class="detail__title">DISLOCATION</h2>
+                    <p class="detail__date">2022 .09 .28  -  2022 .12 .31</p>
+                </div>
+            </div>
+            <div class="detail__container">
+                <div class="detail__header">
+                    <div class="home">
+                        <a class="home_iconBox" href="../main/main.html">
+                            <span class="home_icon"></span>
+                        </a>
+                        <span>Exhibition</span>
+                    </div>
+                    <div class="menu">
+                        <li><a href="#detail__exhibition" class="active">전시소개</a></li>
+                        <li><a href="#detail__detail">상세정보</a></li>
+                        <li><a href="#detail__artist">참여작가</a></li>
+                    </div>
+                </div>
+                <div class="detail__main">
+                    <h2 id="detail__exhibition" class="detail__exhibition__h2">전시소개</h2>
+                    <div class="detail__exhibition">
+                        <figure class="detail__exhibition__main">
+                            <img src="../assets/img/detail_bg02.jpg" alt="이미지1">
+                        </figure>
+                        <h3 class="detail__exhibition__h3">Harmony of sense</h3>
+                        <p class="detail__exhibition__p">&lt;공감각적 심상&gt; 하나의 감각이 동시에 다른 영역의 감각을 불러일으켜 일어나는 심상. <br>
+                            감각이 서로 영향을 받아 전이가 일어날 때 우리는 대상을 더욱 입체적으로 받아들인다. <br>
+                            작품에 투영된 감각은 작가와 관객 사이 소통의 창구가 되어준다. <br>
+                            작가가 차곡차곡 쌓아올린 시간 속 창작의 숨결을 느끼며 완성된 작품에서 무의 순간까지 빠르게 거슬러 올라간다.<br> 
+                            어우러진 오감은 우리가 바라본 작품에서 향기를 느끼게 할 수도, 소리를 들려주기도 한다. <br> 
+                            감각의 전이는 숨겨진 본질을 찾고 물성을 감각할 수 있는 힘을 발현한다. <br> 
+                            변화하는 정원의 색깔과 풀내음 속 3명의 작가가 표현해낸 회화 및 공예작품을 통해 감각의 전이와 확장을 경험할 수 있는 시간이 되기를 바란다.</p>
+                        <div class="detail__exhibition__img">
+                            <figure class="left">
+                                <img src="../assets/img/detail_bg03.jpg" alt="이미지2">
+                            </figure>
+                            <div class="detail__exhibition__desc">
+                                <h3>beyound No.20-004</h3>
+                                <p>육건우 | Yook Gun Woo</p>
+                                <p>&lt;beyound No.20-004&gt; 작가는 패브릭을 주요 소재로 심리적 추상을 이미지화 하는 설치 미술작가이다.<br>
+                                    천연섬유와 젯소를 사용하여 평면 위 레이아웃을 구성하고
+                                    흰색의 다양한 주름이 갖는 변주를 활용하여 심리적 묘사를 표현하고 있다. 미약하지만 그럼에도 불구하고 끊임없이 수많은 시련을 견디어 내며 살아가기에
+                                     일상의 작은 자극도 저에게 큰 파동처럼 느껴질 만큼 매일의 긴장과 안도감 속에서 살고 있기에 극과 극으로 치닫는 감정과 그 사이사이 느껴지는 다양한 감각에 기인하여 패브릭이라는 소재가 가진 불완전하면서도 가장 완전한 찰나의 순간을 포착해보고 싶었다. 그 순간을 포착하기 위해 한 방향의 장력을 활용해 긴장감이 느껴지는 극한의 감정을 만들어내기도 하고
+                                    반복된 주름과 드레이프를 활용하여 몽환적이면서도 끝없이 반복되는 내면의 세계를 연출하기도 한다. </p>
+                            </div>
+                        </div>
+                        <div class="detail__exhibition__img">
+                            <div class="detail__exhibition__desc">
+                                <h3>WONHYUNG_12</h3>
+                                <p>문지원 | Moon Ji Won</p>
+                                <p>&lt;WONHYUNG_12&gt; 삶을 운용하는 존재들은 생명력이라는 하나의 점에서 출발한다.
+                                    그 근원적 중심으로부터 발생된 후로는 각자만의 여정을 따라 뻗어 나가는 듯하지만, 우리는 기필코 동류로서의 지점을 마주한다. 나는 이러한 순간들을 떠올리며 마티에르로 만들어낸 여정들의 선 위에 먹을 찍고, 스치고, 잇는다.
+                                    이 작고 검은 먹 자국들이 모이고 이어져 마침내 어렴풋한 원형의 형상을 드러낸다. 무의식과 의식의 정신적 이미지를 기록하며 우리와 세계의 본질에 다가가고,
+                                    화면 안에서 서로 조응하는 점과 선의 관계를 조명하고자 한다.</p>
+                            </div>
+                            <figure class="right">
+                                <img src="../assets/img/detail_bg04.jpg" alt="이미지3">
+                            </figure>
+                        </div>
+                        <div class="detail__exhibition__img">
+                            <figure class="left">
+                                <img src="../assets/img/detail_bg05.jpg" alt="이미지4">
+                            </figure>
+                            <div class="detail__exhibition__desc">
+                                <h3>Wave2(Low Table)</h3>
+                                <p>스튜디오 차차 | Studio ChaCha</p>
+                                <p>&lt;Wave2
+                                    &gt;스튜디오차차는 그라데이션 컬러 유리를 기반으로 다양한 시각효과를 내는 가구와 오브제를 디자인한다.
+                                    익숙한 것들을 익숙하지 않은 방식으로 조합함으로써 새로운 미학을 창조하며
+                                    투명한 물성의 유리가 교차하며 생기는 우연한 색감과 형태에 집중한다. 중층의 투명 레이어들은 서로 교차하고 충돌하면서 보이는 각도에 따라 다른 이미지를 만들고, 유리의 그라데이션 컬러는 이러한 중첩에 의한 상호작용의 효과를 더욱 극대화한다.
+                                    스튜디오차차의 가구 오브제를 구성하는 각각의 레이어는 독립적 개체가 아닌 일종의 관계하는 집단이며,
+                                    서로의 영역에 개입하여 미학적 재구성을 이룬다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="detail__detail" class="detail__exhibition__h2">상세정보</h2>
+                    <div class="detail__detail">
+                        <figure class="detail__detail__img">
+                            <img src="../assets/img/detail_bg06.jpg" alt="상세정보 이미지">
+                        </figure>
+                        <div class="detail__detail__desc">
+                            <h3>Dislocation</h3>
+                            <table class="detail__detail__table">
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>기간</td>
+                                        <td>2012.11.20 ~ 2013.02.11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>장소</td>
+                                        <td>대구미술관 1전시실<a href="#" class="arrow"><span class="ir">외부 링크로 이동</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>관람 시간</td>
+                                        <td>월 / 화 / 목 / 금 / 일 ( 10:00-18:00 )<br>
+                                            수 / 토
+                                            ( 10:00-21:00 )  </td>
+                                    </tr>
+                                    <tr>
+                                        <td>연령</td>
+                                        <td>무관</td>
+                                    </tr>
+                                    <tr>
+                                        <td>입장권</td>
+                                        <td>naver.com<a href="#" class="arrow"><span class="ir">외부 링크로 이동</span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>휴관일</td>
+                                        <td>1월1일 / 설날 / 추석</td>
+                                    </tr>
+                                    <tr>
+                                        <td>문의</td>
+                                        <td>031-000-0000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h2 id="detail__artist" class="detail__exhibition__h2">참여작가</h2>
+                    <div class="detail__artist">
+                        <div class="detail__artistList artist1">
+                            <figure>
+                                <img src="../assets/img/detail_bg07.jpg" alt="작가1">
+                                <div>View more <span class="ViewMore__arrow"></span></div>
+                            </figure>
+                            <h3>육건우</h3>
+                            <p>Yook Gun Woo</p>
+                        </div>
+                        <div class="detail__artistList artist2">
+                            <figure>
+                                <img src="../assets/img/detail_bg08.jpg" alt="작가2">
+                                <div>View more <span class="ViewMore__arrow"></span></div>
+                            </figure>
+                            <h3>문지원</h3>
+                            <p>Moon Ji Won</p>
+                        </div>
+                        <div class="detail__artistList artist3">
+                            <figure>
+                                <img src="../assets/img/detail_bg09.jpg" alt="작가3">
+                                <div>View more <span class="ViewMore__arrow"></span></div>
+                            </figure>
+                            <h3>스튜디오 차차</h3>
+                            <p>Studio ChaCha</p>
+                        </div>
+                    </div>
+                    <div class="detail__artist__modal__close close1"><span class="ir">닫기</span></div>
+                    <div class="detail__artist__modal modal1">
+                        <div class="detail__artist__modal__top">
+                            <h2 class="detail__artist__modal__h2">권소영</h2>
+                            <span class="detail__artist__modal__span">Kwon So-young</span>
+                        </div>
+                        <div class="detail__artist__modal__bottom">
+                            <figure>
+                                <img src="../assets/img/detail_bg10.jpg" alt="작가 이미지">
+                            </figure>
+                            <p class="detail__artist__modal__p">나의 시선과 발걸음이 오랜 시간 멈추는 곳에는 언제나 그 끝에 풍경이 있다.<br>
+                                계절에 따라 새로운 옷을 입으며 변하지만, 늘 그 자리에 존재한다. 나는 그 안에서 자연의 다양한 존재들을 의식하며 교감하고, 우리 모두 상생하며 살아있음을 느낀다.<br><br>
+                                
+                                언제부턴가 자연으로부터 갈증을 해소하고 치유 받는 나를 발견하였고, 그 때부터 집착적으로 풍경을 그리게 되었다. 내가 마주하는 풍경은 종이 위에 그려질 소재가 되고, 종이는 이성적 사유와 감성적 느낌을 담는 장소가 된다.  자연이 주는 위안을 넘어서 자연을 그리는 행위 그 자체만으로도 고요해지고 편안해진다.
+                            <br>
+                            직접 마주하며 나에게 스며든 자연은 깊은 관조를 통해 그 때의 감정, 공기, 바람, 소리, 냄새 등 각각의 장소에 대한 감흥에 따라 분할, 재구성의 단계를 거쳐 나만의 방식으로 기록된다. 자연의 이미지들은 회상하는 시점에 따라 시간의 순차, 공간의 연속성 없이 화면 안에서 뒤섞인다. 이는 곧 실제 자연을 기반으로 둔 가상의 공간 혹은 기억의 공간으로 전개된다.<br><br>
+
+                            나는 자연 속에서 느꼈던 감정을 작품에 담아 관람자에게 잠시 동안만이라도 마음의 여유와 편안한 휴식을 만들어주고 싶다. 내가 경험했듯이 나의 풍경을 통해 누군가의 마음이 치유되길 바라며 불확실한 미래가 주는 현대인들의 불안함과 외로움, 그리고 삶의 고단함을 치유하기 위한 마음의 다스림을 추구한다.</p>
+                        </div>
+                    </div>
+                    <div class="detail__artist__modal__close close2"><span class="ir">닫기</span></div>
+                    <div class="detail__artist__modal modal2">
+                        <div class="detail__artist__modal__top">
+                            <h2 class="detail__artist__modal__h2">권소영</h2>
+                            <span class="detail__artist__modal__span">Kwon So-young</span>
+                        </div>
+                        <div class="detail__artist__modal__bottom">
+                            <figure>
+                                <img src="../assets/img/detail_bg10.jpg" alt="작가 이미지">
+                            </figure>
+                            <p class="detail__artist__modal__p">나의 시선과 발걸음이 오랜 시간 멈추는 곳에는 언제나 그 끝에 풍경이 있다.<br>
+                                계절에 따라 새로운 옷을 입으며 변하지만, 늘 그 자리에 존재한다. 나는 그 안에서 자연의 다양한 존재들을 의식하며 교감하고, 우리 모두 상생하며 살아있음을 느낀다.<br><br>
+                                
+                                언제부턴가 자연으로부터 갈증을 해소하고 치유 받는 나를 발견하였고, 그 때부터 집착적으로 풍경을 그리게 되었다. 내가 마주하는 풍경은 종이 위에 그려질 소재가 되고, 종이는 이성적 사유와 감성적 느낌을 담는 장소가 된다.  자연이 주는 위안을 넘어서 자연을 그리는 행위 그 자체만으로도 고요해지고 편안해진다.
+                            <br>
+                            직접 마주하며 나에게 스며든 자연은 깊은 관조를 통해 그 때의 감정, 공기, 바람, 소리, 냄새 등 각각의 장소에 대한 감흥에 따라 분할, 재구성의 단계를 거쳐 나만의 방식으로 기록된다. 자연의 이미지들은 회상하는 시점에 따라 시간의 순차, 공간의 연속성 없이 화면 안에서 뒤섞인다. 이는 곧 실제 자연을 기반으로 둔 가상의 공간 혹은 기억의 공간으로 전개된다.<br><br>
+
+                            나는 자연 속에서 느꼈던 감정을 작품에 담아 관람자에게 잠시 동안만이라도 마음의 여유와 편안한 휴식을 만들어주고 싶다. 내가 경험했듯이 나의 풍경을 통해 누군가의 마음이 치유되길 바라며 불확실한 미래가 주는 현대인들의 불안함과 외로움, 그리고 삶의 고단함을 치유하기 위한 마음의 다스림을 추구한다.</p>
+                        </div>
+                    </div>
+                    <div class="detail__artist__modal__close close3"><span class="ir">닫기</span></div>
+                    <div class="detail__artist__modal modal3">
+                        <div class="detail__artist__modal__top">
+                            <h2 class="detail__artist__modal__h2">권소영</h2>
+                            <span class="detail__artist__modal__span">Kwon So-young</span>
+                        </div>
+                        <div class="detail__artist__modal__bottom">
+                            <figure>
+                                <img src="../assets/img/detail_bg10.jpg" alt="작가 이미지">
+                            </figure>
+                            <p class="detail__artist__modal__p">나의 시선과 발걸음이 오랜 시간 멈추는 곳에는 언제나 그 끝에 풍경이 있다.<br>
+                                계절에 따라 새로운 옷을 입으며 변하지만, 늘 그 자리에 존재한다. 나는 그 안에서 자연의 다양한 존재들을 의식하며 교감하고, 우리 모두 상생하며 살아있음을 느낀다.<br><br>
+                                
+                                언제부턴가 자연으로부터 갈증을 해소하고 치유 받는 나를 발견하였고, 그 때부터 집착적으로 풍경을 그리게 되었다. 내가 마주하는 풍경은 종이 위에 그려질 소재가 되고, 종이는 이성적 사유와 감성적 느낌을 담는 장소가 된다.  자연이 주는 위안을 넘어서 자연을 그리는 행위 그 자체만으로도 고요해지고 편안해진다.
+                            <br>
+                            직접 마주하며 나에게 스며든 자연은 깊은 관조를 통해 그 때의 감정, 공기, 바람, 소리, 냄새 등 각각의 장소에 대한 감흥에 따라 분할, 재구성의 단계를 거쳐 나만의 방식으로 기록된다. 자연의 이미지들은 회상하는 시점에 따라 시간의 순차, 공간의 연속성 없이 화면 안에서 뒤섞인다. 이는 곧 실제 자연을 기반으로 둔 가상의 공간 혹은 기억의 공간으로 전개된다.<br><br>
+
+                            나는 자연 속에서 느꼈던 감정을 작품에 담아 관람자에게 잠시 동안만이라도 마음의 여유와 편안한 휴식을 만들어주고 싶다. 내가 경험했듯이 나의 풍경을 통해 누군가의 마음이 치유되길 바라며 불확실한 미래가 주는 현대인들의 불안함과 외로움, 그리고 삶의 고단함을 치유하기 위한 마음의 다스림을 추구한다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topBtn ir">top</div>
+        </main>
+        <!-- //main -->
+
+        <footer id="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <div class="footer__left"><a href="#">BODA</a></div>
+                    <div class="footer__center">
+                        <ul>
+                            <li>
+                                <a href="#">개인정보 처리방침</a>
+                                <span>|</span>
+                                <a href="#">이용약관 영상정보처리기기</a>
+                                <span>|</span>
+                                <a href="#">운영·관리방침</a>
+                            </li>
+                            <li>대표자: 4조 | 라인컴퓨터아트학원</li>
+                            <li>주소: 안산시 단원구 고잔2길 45 코스모프라자 6층</li>
+                        </ul>
+                    </div>
+                    <div class="footer__right">
+                        <a href="#">
+                            <svg
+                                width="25"
+                                height="25"
+                                viewBox="0 0 25 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_821_4453)">
+                                    <path
+                                        d="M12.5 2.25098C15.8398 2.25098 16.2354 2.26562 17.5488 2.32422C18.7695 2.37793 19.4287 2.58301 19.8682 2.75391C20.4492 2.97852 20.8691 3.25195 21.3037 3.68652C21.7432 4.12598 22.0117 4.54102 22.2363 5.12207C22.4072 5.56152 22.6123 6.22559 22.666 7.44141C22.7246 8.75977 22.7393 9.15527 22.7393 12.4902C22.7393 15.8301 22.7246 16.2256 22.666 17.5391C22.6123 18.7598 22.4072 19.4189 22.2363 19.8584C22.0117 20.4395 21.7383 20.8594 21.3037 21.2939C20.8643 21.7334 20.4492 22.002 19.8682 22.2266C19.4287 22.3975 18.7646 22.6025 17.5488 22.6563C16.2305 22.7148 15.835 22.7295 12.5 22.7295C9.16016 22.7295 8.76465 22.7148 7.45117 22.6563C6.23047 22.6025 5.57129 22.3975 5.13184 22.2266C4.55078 22.002 4.13086 21.7285 3.69629 21.2939C3.25684 20.8545 2.98828 20.4395 2.76367 19.8584C2.59277 19.4189 2.3877 18.7549 2.33398 17.5391C2.27539 16.2207 2.26074 15.8252 2.26074 12.4902C2.26074 9.15039 2.27539 8.75488 2.33398 7.44141C2.3877 6.2207 2.59277 5.56152 2.76367 5.12207C2.98828 4.54102 3.26172 4.12109 3.69629 3.68652C4.13574 3.24707 4.55078 2.97852 5.13184 2.75391C5.57129 2.58301 6.23535 2.37793 7.45117 2.32422C8.76465 2.26562 9.16016 2.25098 12.5 2.25098ZM12.5 0C9.10645 0 8.68164 0.0146484 7.34863 0.0732422C6.02051 0.131836 5.10742 0.34668 4.31641 0.654297C3.49121 0.976562 2.79297 1.40137 2.09961 2.09961C1.40137 2.79297 0.976562 3.49121 0.654297 4.31152C0.34668 5.10742 0.131836 6.01562 0.0732422 7.34375C0.0146484 8.68164 0 9.10645 0 12.5C0 15.8936 0.0146484 16.3184 0.0732422 17.6514C0.131836 18.9795 0.34668 19.8926 0.654297 20.6836C0.976562 21.5088 1.40137 22.207 2.09961 22.9004C2.79297 23.5938 3.49121 24.0234 4.31152 24.3408C5.10742 24.6484 6.01562 24.8633 7.34375 24.9219C8.67676 24.9805 9.10156 24.9951 12.4951 24.9951C15.8887 24.9951 16.3135 24.9805 17.6465 24.9219C18.9746 24.8633 19.8877 24.6484 20.6787 24.3408C21.499 24.0234 22.1973 23.5938 22.8906 22.9004C23.584 22.207 24.0137 21.5088 24.3311 20.6885C24.6387 19.8926 24.8535 18.9844 24.9121 17.6563C24.9707 16.3232 24.9854 15.8984 24.9854 12.5049C24.9854 9.11133 24.9707 8.68652 24.9121 7.35352C24.8535 6.02539 24.6387 5.11231 24.3311 4.32129C24.0234 3.49121 23.5986 2.79297 22.9004 2.09961C22.207 1.40625 21.5088 0.976563 20.6885 0.65918C19.8926 0.351562 18.9844 0.136719 17.6562 0.078125C16.3184 0.0146484 15.8936 0 12.5 0Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M12.5 6.0791C8.95508 6.0791 6.0791 8.95508 6.0791 12.5C6.0791 16.0449 8.95508 18.9209 12.5 18.9209C16.0449 18.9209 18.9209 16.0449 18.9209 12.5C18.9209 8.95508 16.0449 6.0791 12.5 6.0791ZM12.5 16.665C10.2002 16.665 8.33496 14.7998 8.33496 12.5C8.33496 10.2002 10.2002 8.33496 12.5 8.33496C14.7998 8.33496 16.665 10.2002 16.665 12.5C16.665 14.7998 14.7998 16.665 12.5 16.665Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M20.6738 5.8252C20.6738 6.65528 20 7.32422 19.1748 7.32422C18.3447 7.32422 17.6758 6.65039 17.6758 5.8252C17.6758 4.99512 18.3496 4.32617 19.1748 4.32617C20 4.32617 20.6738 5 20.6738 5.8252Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_821_4453">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs></svg></a
+                        ><a href="#">
+                            <svg
+                                width="25"
+                                height="25"
+                                viewBox="0 0 25 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_821_4454)">
+                                    <path
+                                        d="M25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 18.739 4.57104 23.9104 10.5469 24.8481V16.1133H7.37305V12.5H10.5469V9.74609C10.5469 6.61328 12.4131 4.88281 15.2683 4.88281C16.6355 4.88281 18.0664 5.12695 18.0664 5.12695V8.20312H16.4902C14.9375 8.20312 14.4531 9.16675 14.4531 10.1562V12.5H17.9199L17.3657 16.1133H14.4531V24.8481C20.429 23.9104 25 18.739 25 12.5Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_821_4454">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__bottom">ⓒ 2022 BY BODA ALL RIGHT RESERVED.</div>
+            </div>
+        </footer>
+
+        <script src="../assets/js/headermenu.js"></script>
+        <script src="../assets/js/loginpopup.js"></script>
+        <script src="../assets/js/swiper.js"></script>
+        <script src="../assets/js/slider.js"></script>
+        <script src="../assets/js/topBtn.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+            $(".artist1").click(function(e){
+                e.preventDefault();
+                $(".modal1").fadeIn(500);
+                $(".close1").fadeIn(500);
+            })
+            $(".close1").click(function(e){
+                e.preventDefault();
+                $(".modal1").fadeOut(500);
+                $(".close1").fadeOut(500);
+            })
+            $(".artist2").click(function(e){
+                e.preventDefault();
+                $(".modal2").fadeIn(500);
+                $(".close2").fadeIn(500);
+            })
+            $(".close2").click(function(e){
+                e.preventDefault();
+                $(".modal2").fadeOut(500);
+                $(".close2").fadeOut(500);
+            })
+            $(".artist3").click(function(e){
+                e.preventDefault();
+                $(".modal3").fadeIn(500);
+                $(".close3").fadeIn(500);
+            })
+            $(".close3").click(function(e){
+                e.preventDefault();
+                $(".modal3").fadeOut(500);
+                $(".close3").fadeOut(500);
+            })
+        </script>
+    </body>
+</html>

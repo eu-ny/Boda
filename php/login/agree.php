@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <?php include '../include/link.php'; ?>
+    <?php include "../include/link.php" ?>
     <title>약관동의 페이지</title>
 </head>
-
 <body>
-    <?php include '../include/header.php'; ?>
-    <?php include '../login/login.php'; ?>
+    <?php include "../include/header.php" ?>
+    <?php include "../login/login.php" ?>
     <!-- //header -->
-
     <section id="AgreeType" class="Agree__wrap agree">
         <h2 class="agree_tit">SIGN UP</h2>
         <div class="Agree__inner">
@@ -25,7 +22,6 @@
                     <h4 class="title">이용약관 동의 [필수] <input type='checkbox' name='check_all' id="check1" required><label
                             for="check1"></label>
                     </h4>
-
                     <div class="box">
                         <h5 class="desc">제 1 조 [ 목적 ]</h5>
                         <p class="desc2">사이트를 통하여 제공하는 모든 서비스의 이용조건 및 절차, 이용자의 권리, 의무, 책임<br>
@@ -42,14 +38,11 @@
                             서비스 사용 행위에 본 약관이 우선적으로 적용됩니다.
                         </p>
                     </div>
-
                 </article>
-
                 <article class="Agree a2">
                     <h4 class="title">개인정보 수집 및 이용 동의 [필수] <input type='checkbox' name='check_all' id="check2"><label
                             for="check2"></label>
                     </h4>
-
                     <div class="box">
                         <h5 class="desc">1. 개인정보 수집목적 및 이용목적</h5>
                         <p class="desc2">회원제 서비스 이용에 따른 본인확인, 개인 식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 연령확인, 불만처리 등
@@ -67,7 +60,6 @@
                             ∙ 선택항목: 이메일 수신 동의<br>
                         </p>
                     </div>
-
                 </article>
                 <div class="checkbox1 Agree">
                     <input type='checkbox' id="check3" name='check_all'><label for="check3"></label>
@@ -86,12 +78,9 @@
         </div>
     </section>
     <!-- //section -->
-
-    <?php include '../include/footer.php'; ?>
+    <?php include "../include/footer.php" ?>
     <!-- //footer -->
-
-    <?php include '../include/script.php'; ?>
+    <?php include "../include/script.php" ?>
     <!-- //script -->
 </body>
-
 </html>

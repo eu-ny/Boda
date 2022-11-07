@@ -94,7 +94,7 @@ foreach ($ReviewBestResult as $ReviewBestSql) { ?>
             </section>
             <!-- cardTypeMobile -->
             <section class="cardType mobile">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper cardSwiper">
                     <div class="swiper-wrapper">
                         <?php foreach ($ReviewBestResult as $ReviewBestSql) { ?>
                             <div class="swiper-slide">

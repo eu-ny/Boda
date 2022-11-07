@@ -57,7 +57,7 @@
 
 .header__menu .sub li a {
     margin-left: 5px;
-    width: 190px;
+    /* width: 190px; */
     height: 45px;
     font-size: 15px;
     font-weight: 300;

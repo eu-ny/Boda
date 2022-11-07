@@ -1,5 +1,24 @@
-//swiper
-var swiper = new Swiper(".mySwiper", {
+// main Slider
+var swiper = new Swiper(".mySwiper1", {
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
+
+// main cardSlider
+var swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: "auto",
+    freeMode: true,
+    mousewheel: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+    },
+});
+
+// riview Card swiper
+var swiper3 = new Swiper(".cardSwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -14,3 +33,4 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+

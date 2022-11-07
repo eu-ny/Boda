@@ -92,3 +92,18 @@ submenu2.addEventListener("mouseleave", () => {
 });
 
 
+const taget = document.querySelector('.mainContent__wrap .taget');
+const mHeaderArea2 = document.querySelector(".headerEffect");
+
+function headerScroll(){
+    //스크롤 탑 값 구하기
+    let scrollTop = document.documentElement.scrollTop || window.scrollY;
+
+    if(scrollTop >= taget.offsetTop - 50){
+        mHeaderArea2.style.background = "#fff";
+    } else {
+        mHeaderArea2.style.background = "transparent";
+    }
+    requestAnimationFrame(headerScroll);
+  }
+  headerScroll();

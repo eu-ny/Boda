@@ -116,12 +116,10 @@
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 .swiper-css-mode > .swiper-wrapper {
-    overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
 .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
-    display: none;
 }
 .swiper-css-mode > .swiper-wrapper > .swiper-slide {
     scroll-snap-align: start start;
@@ -391,28 +389,21 @@ button.swiper-pagination-bullet {
 }
 .swiper-scrollbar {
     border-radius: 10px;
-    position: relative;
     -ms-touch-action: none;
-    background: rgba(0, 0, 0, 0.1);
+    background: #efefef;
 }
 .swiper-scrollbar-disabled > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-disabled {
-    display: none !important;
+    /* display: none !important; */
 }
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-    position: absolute;
-    left: 1%;
-    bottom: 3px;
     z-index: 50;
     height: 5px;
     width: 98%;
 }
 .swiper-scrollbar.swiper-scrollbar-vertical,
 .swiper-vertical > .swiper-scrollbar {
-    position: absolute;
-    right: 3px;
-    top: 1%;
     z-index: 50;
     width: 5px;
     height: 98%;
@@ -421,7 +412,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     width: 100%;
     position: relative;
-    background: rgba(0, 0, 0, 0.5);
+    background: #b0b0b0;
     border-radius: 10px;
     left: 0;
     top: 0;
@@ -451,7 +442,7 @@ button.swiper-pagination-bullet {
     cursor: move;
 }
 .swiper-lazy-preloader {
-    width: 42px;
+    width: 100px;
     height: 42px;
     position: absolute;
     left: 50%;
@@ -488,12 +479,12 @@ button.swiper-pagination-bullet {
     left: 0;
     top: 0;
     pointer-events: none;
-    opacity: 0;
+    /* opacity: 0; */
     z-index: -1000;
 }
 .swiper-free-mode > .swiper-wrapper {
     transition-timing-function: ease-out;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .swiper-grid > .swiper-wrapper {
     flex-wrap: wrap;
