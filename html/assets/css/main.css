@@ -23,7 +23,7 @@
     padding-left: 60px;
 }
 .mainEffect .subMenu .sub {
-    width: 190px;
+    width: 220px;
 }
 .mainEffect .subMenu .sub > li a {
     display: block;
@@ -271,7 +271,20 @@
     background-image: url(../img/main__banner__icon01.svg);
     background-repeat: no-repeat;
     background-position: center center;
+    animation: bounce 2s infinite;
 }
+@keyframes bounce {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(20px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
 .mainSearch__wrap {
     text-align: center;
     margin-top: 30px;
@@ -406,8 +419,7 @@
     justify-content: space-between;
 }
 .Best {
-    /* width: 280px; */
-    width: 24%;
+    /* width: 24%; */
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -457,19 +469,23 @@
     transform: translateY(120px);
     transition: all 1s 0.3s cubic-bezier(.1,1.01,.78,1.02);
 }
+
 .item1.show {
     opacity: 1;
     transform: translateY(0px);
 }
+
 .bannerItem:first-child {
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s 0.3s cubic-bezier(.1,1.01,.78,1.02);
 }
+
 .bannerItem:first-child.show {
     opacity: 1;
     transform: translateY(0px);
 }
+
 .bannerItem:nth-child(2) {
     opacity: 0;
     transform: scaleX(0);

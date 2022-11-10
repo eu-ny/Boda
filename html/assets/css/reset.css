@@ -53,8 +53,10 @@ select,
 table,
 textarea {
 	color: #000;
-	font-family: 'SCoreDream';
+	font-family: 'SCoreDream', 'NanumSquare', "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* 가로모드 초기화 */

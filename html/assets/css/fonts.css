@@ -119,6 +119,7 @@
          url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.woff') format('woff'),
          url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquare/NanumSquare-Regular.ttf') format("truetype");
     font-display: swap;
+    unicode-range: U+AC00-D7A3;
 } 
 @font-face {
     font-family: 'NanumSquare';
