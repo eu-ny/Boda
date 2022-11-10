@@ -176,9 +176,11 @@
     background-position: center center;
     background-image: url(../img/main__icon.svg);
     z-index: 10;
+    animation: spin 8s infinite cubic-bezier(0.37, 0.35, 0.56, 0.56);
 }
 .smalieAgree:hover {
-    animation: spin 1s infinite cubic-bezier(0.77,0.2,0.1,0.77);
+    /* animation: spin 1s infinite cubic-bezier(0.77,0.2,0.1,0.77); */
+    animation: spin 1s infinite cubic-bezier(0.37, 0.35, 0.56, 0.56);
 }
 .hide {
     display: none;

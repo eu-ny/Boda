@@ -46,7 +46,7 @@
 }
 
 .header__menu .main__menu {
-    width: 190px;
+    width: 220px;
     line-height: 70px;
     height: 68px;
     display: block;
@@ -57,7 +57,7 @@
 
 .header__menu .sub li a {
     margin-left: 5px;
-    /* width: 190px; */
+    /* width: 220px; */
     height: 45px;
     font-size: 15px;
     font-weight: 300;

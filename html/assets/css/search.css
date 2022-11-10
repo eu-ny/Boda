@@ -1,0 +1,118 @@
+/* main */
+.keyWordClickBox {
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.keyWordClickBox > p {
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1);
+}
+.keyWordClickBox > p:hover {
+    transform: scale(1.1);
+}
+
+.arrow_icon01 {
+    position: absolute;
+    left: 50%;
+    /* top: 35px; */
+    margin-top: 35px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='19' viewBox='0 0 16 19' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Crect width='16' height='18.9091' transform='matrix(-1 0 0 1 16 0)' fill='url(%23pattern0)'/%3E%3Cdefs%3E%3Cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='1' height='1'%3E%3Cuse xlink:href='%23image0_1492_4664' transform='translate(0 -0.0217949) scale(0.0111111 0.00940171)'/%3E%3C/pattern%3E%3Cimage id='image0_1492_4664' width='90' height='111' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABvCAYAAABsH9ccAAAEfUlEQVR4Xu3czW3UQBQH8JmsFOW4F69ypAToACohVAAdABUAHUAHdBCogBLIMdIe4BhtpBjNsnacTewZe97Hf+znS1ay12/m55dn78h63tkmIuD7oqzX6/XZ2dk67L++vr4SGU3hQc7Pz5+FKdzc3PwNW3c6j6CrqnrunPvkvX/ZOfCqruvvt7e3H49PULhN9vBDQp6enr51zr1zzu0TM2x1Xf9YrVZvmiR9AF1V1Wvv/deB6FcnJyevLMP/C4UMvru7u3TO7TP5qa2u64vtdvuthT586XfCJTbsROROdr9ooauqujwqF0Pmi8ZOyeQuXigje+hDnfmTkM3dQxaJPRa5AdtDjygbx9diUdhTkQNaLnQ4xyKwc5Bb6PBhs9mE0tE+nlgZuRfIRQ7J2N4MN5vNB+fc+5HAs6/ZBMjhmfpLC324If4aeiZMuAizKiMUyCGbd7vd/eNd6gP4UrCpkJsfeI9+glMHSLgwcIdwGDy5qMQRCE6zZ0Bcc+9dveMKiAzOOede6KXVbE7kB8/RfZnGPQCEDJeY42BGNwgSA9ECl5pbEvRcy4gUclLp6Gaa5MC4M1x6LskZPacyIo08OqPngK2BPBm61JqthZwFXRq2JnI2dCnY2sgk0OjYCMhk0KjYKMik0GjYSMjk0CjYaMgs0NrYiMhs0FrYqMis0NLYyMjs0FLY6Mgi0NzYJSCLQXNhl4IsCk2NHc4Xewm8WW0c+Cv2ws/o9eiEwQ8eQpWFhyC9b9onjFMMWTyjm8kTYSdY9h4iiqwGTVhGpmCLI6tCK2GrIKtDC2OrIUNAC2GrIsNAM2OrI0NBM2FDIMNBE2PDIENCE2FDIcNCZ2LDIUNDT8SGRIaHHokNi1wEdCI2NHIx0M2CRlVVF9770IQkNG/ZNx/x3v/c7Xaf0Ru2iC+TTlkFmsN3DFroKhq0QQsJCIWxjDZoIQGhMJbRBi0kIBTGMlob2nqTjr8C4TWK8C3rTTreLvoN600aJco/IOVFIOtNmumcgtyEqOvaepNO8R6D3K4yhg/WmzSdeyxyc+bclpnwC+7phPEjpyK3C/+HE6T0jn5qNIvAzkFuocMH603an9G5yNabNF4tktrLx05jvUkjQgSZHCJYb9IhZypk6006oEyN/OBm2I3LEShWx1D2c83depN2rjAXcm9GN7E5A6NksNRcowv/S8CWmGMUOlxxiYFoZbjU3JKg54othRyt0cdZJjkw7gyXnktyRkvdNLiBtf47R0NrDZTqAkhncjPuSdClYmshj67RJddsTeRs6FIyWxuZBBodGwGZDBoVGwWZFBoNGwmZHBoFGw2ZBVobGxGZDVoLGxWZFVoaGxmZHVoKGx1ZBJobuwRkMWgu7FKQRaGpscP5rDfpwJomVRYeQlhv0qH1YyLsoRCxfeJvwE5ej47NJLZfEVscWbxGH+MrYKsgq0MT3iBj/0BhvxoyBLQQtioyDDQztjoyFDQTNgQyHDQxNgwyJDQRNhQyLHQmNhwyNPREbEhkeOiR2LDIRUAnYkMjhzn8AzeIwnuYtjkdAAAAAElFTkSuQmCC'/%3E%3C/defs%3E%3C/svg%3E%0A");
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(0px);
+}
+
+.arrow_icon01:hover {
+    transform: translateY(10px);
+}
+
+
+/* keyword */
+.keyword__wrap {
+    margin: 80px 0px 120px;
+}
+.keyword__inner {
+    display: flex;
+    justify-content: center;
+}
+.keyword {
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.keyword:hover {
+    background: #000;
+    color: #fff;
+}
+.keyword.click {
+    background: #000;
+    color: #fff;
+}
+
+.kewordResult__wrap {}
+.kewordResult__inner {}
+.kewordResult__inner > h2 {
+    display: inline-block;
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 30px;
+}
+.keyword__imgBox__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.keyword__imgBox {
+    margin-bottom: 50px;
+}
+.keyword__img {
+    overflow: hidden;
+    position: relative;
+}
+.keyword__img:hover img {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: scale(1.1);
+}
+.keyword__imgBox > h3 {
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.keyword__img:hover .keword__desc {
+    bottom: 0
+}
+.keword__desc {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffffa6;
+    backdrop-filter: blur(3px);
+    bottom: -100%;
+    left: 0;
+    padding: 6vw 2vw;
+    transition: all 0.3s cubic-bezier(0.54, 0.1, 0.48, 1.02);
+}
+.keword__desc > p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #b0b0b0;
+    padding: 10px;
+}
+
+.kewordResult__wrap .board__pages.keyword__page {
+    margin-top: 0;
+    margin-bottom: 120px;   
+}

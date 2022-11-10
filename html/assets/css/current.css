@@ -1,9 +1,9 @@
 /* current home*/
 .current__home {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     display: flex;
-    right: 20px;
+    right: 25px;
     align-items: center;
   }
   .current__home_iconBox .current__home_icon {
@@ -35,11 +35,11 @@
     margin-bottom: 80px;
     color: #000;
     border-bottom: 2px solid #000;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   
   .current__header span {
-    font-size: 18px;
+    font-size: 15px;
     color: #b0b0b0;
     font-weight: 300;
   }
