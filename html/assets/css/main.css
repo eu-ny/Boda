@@ -254,7 +254,8 @@
     padding-left: 5rem;
     font-size: 80px;
     color: #fff;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
+    margin-bottom: 140px;
 }
 .mainB__desc > p {
     line-height: 1.2;
@@ -273,17 +274,37 @@
     background-position: center center;
     animation: bounce 2s infinite;
 }
+.mainSearch {
+    margin-top: 10px;
+    font-family: 'SCoreDream';
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    animation: bounce2 2s infinite;
+}
 @keyframes bounce {
     0% {
-        transform: translateX(-50%) translateY(0);
+        transform: translateY(0);
     }
     50% {
-        transform: translateX(-50%) translateY(20px);
+        transform: translateY(20px);
     }
     100% {
-        transform: translateX(-50%) translateY(0);
+        transform: translateY(0);
     }
 }
+@keyframes bounce2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 .mainSearch__wrap {
     text-align: center;
