@@ -493,12 +493,13 @@
     <script src="../assets/js/topBtn.js"></script>
     <script src="../assets/js/gsap.min.js"></script>
     <script>
-        // 스크롤 값 구하기
-        let scrollTop = document.documentElement.scrollTop || window.scrollY;
+
 
         // cardSlider
         function scroll(){
-
+            // 스크롤 값 구하기
+            let scrollTop = document.documentElement.scrollTop || window.scrollY;
+            
             const offset = document.querySelectorAll(".offsetTop");
             const item1 = document.querySelectorAll(".item1");
             const bannerItem = document.querySelectorAll(".bannerItem");
