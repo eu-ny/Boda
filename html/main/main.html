@@ -312,9 +312,9 @@
             <article id="mainContent2" class="mainBanner__wrap">
                 <h2 class="mainContent2"></h2>
                 <div class="mainB__desc item1">
-                    <p>Exhibition </p>
-                    <p>Information</p>
-                    <p>BODA</p>
+                    <p class="mainB_target1">Exhibition </p>
+                    <p class="mainB_target2">Information</p>
+                    <p class="mainB_target3">BODA</p>
                 </div>
                 <div class="mainBanner__btm main__container">
                     <div class="mainBanner__iconBox bannerItem">
@@ -491,11 +491,13 @@
     <script src="../assets/js/swiper.js"></script>
     <script src="../assets/js/slider.js"></script>
     <script src="../assets/js/topBtn.js"></script>
+    <script src="../assets/js/gsap.min.js"></script>
     <script>
+        // 스크롤 값 구하기
+        let scrollTop = document.documentElement.scrollTop || window.scrollY;
 
         // cardSlider
         function scroll(){
-            let scrollTop = document.documentElement.scrollTop || window.scrollY;
 
             const offset = document.querySelectorAll(".offsetTop");
             const item1 = document.querySelectorAll(".item1");
@@ -517,6 +519,14 @@
             requestAnimationFrame(scroll);
         }
         scroll();
+
+        // 이질감주기
+        function mainB(){
+            const mainBTarget1 = document.querySelector(".mainB_target1");
+            const mainBTarget2 = document.querySelector(".mainB_target2");
+            const mainBTarget3 = document.querySelector(".mainB_target3");
+
+        }
 
     </script>
 </body>
